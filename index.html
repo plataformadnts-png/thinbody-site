@@ -50,7 +50,7 @@ a{color:#e6c46a}a:hover{color:#f6dc95}
 .btn-gold:hover{color:#14110c;transform:translateY(-3px);box-shadow:0 18px 50px -10px rgba(217,178,92,.9),inset 0 1px 0 rgba(255,255,255,.5)}
 .btn-ghost{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;border:1px solid rgba(217,178,92,.45);color:#efe7d6;text-decoration:none;font-size:15px;letter-spacing:.06em;transition:background .35s,border-color .35s}
 .btn-ghost:hover{color:#f4d98b;background:rgba(217,178,92,.08);border-color:#d9b25c}
-.nav a.nl{color:#d8ccb3;text-decoration:none;font-size:14px;letter-spacing:.08em;position:relative;padding:6px 0}
+.nav a.nl{color:#d8ccb3;text-decoration:none;font-size:14px;letter-spacing:.08em;position:relative;padding:6px 0;white-space:nowrap}
 .nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#d9b25c;transform:scaleX(0);transform-origin:left;transition:transform .4s}
 .nav a.nl:hover{color:#f4d98b}.nav a.nl:hover::after{transform:scaleX(1)}
 .card{border:1px solid rgba(217,178,92,.22);background:linear-gradient(160deg,rgba(255,255,255,.035),rgba(255,255,255,0));border-radius:22px;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s}
@@ -197,6 +197,12 @@ html{scroll-behavior:smooth}
 .pt-pot{height:440px !important}
 }
 
+@media (max-width: 1150px){
+.nav-links{display:none !important}
+.mnav{display:block}
+.pt-title{font-size:clamp(54px, 8.6vw, 96px) !important}
+}
+@media (max-width: 900px){.pt-title{font-size:clamp(46px, 14vw, 72px) !important}}
 @media (prefers-reduced-motion: reduce){.tb *{animation:none !important}}
 </style>
 </head>
@@ -280,7 +286,7 @@ html{scroll-behavior:smooth}
           <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; background: linear-gradient(90deg,#b3122a,#d01f35); color: #fff; letter-spacing: .24em; box-shadow: 0 0 30px -4px rgba(208,31,53,.8)">Lançamento</span>
           <span class="caps" style="font-size: 12px; color: #e6c46a">Novo · Thin Body Suplementos</span>
         </div>
-        <h1 class="hero-title" style="margin: 0; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 104px; line-height: .92; letter-spacing: -.02em; color: #f4f1ea; perspective: 600px"><span class="ltr" style="animation-delay: 0.25s">P</span><span class="ltr" style="animation-delay: 0.31s">R</span><span class="ltr" style="animation-delay: 0.37s">É</span><span class="ltr" style="animation-delay: 0.43s">-</span><span class="ltr" style="animation-delay: 0.49s">T</span><span class="ltr" style="animation-delay: 0.55s">R</span><span class="ltr" style="animation-delay: 0.61s">E</span><span class="ltr" style="animation-delay: 0.67s">I</span><span class="ltr" style="animation-delay: 0.73s">N</span><span class="ltr" style="animation-delay: 0.79s">O</span></h1>
+        <h1 class="hero-title pt-title" style="margin: 0; font-family: 'Jost', sans-serif; font-weight: 600; font-size: clamp(54px, 7.4vw, 104px); white-space: nowrap; line-height: .92; letter-spacing: -.02em; color: #f4f1ea; perspective: 600px"><span class="ltr" style="animation-delay: 0.25s">P</span><span class="ltr" style="animation-delay: 0.31s">R</span><span class="ltr" style="animation-delay: 0.37s">É</span><span class="ltr" style="animation-delay: 0.43s">-</span><span class="ltr" style="animation-delay: 0.49s">T</span><span class="ltr" style="animation-delay: 0.55s">R</span><span class="ltr" style="animation-delay: 0.61s">E</span><span class="ltr" style="animation-delay: 0.67s">I</span><span class="ltr" style="animation-delay: 0.73s">N</span><span class="ltr" style="animation-delay: 0.79s">O</span></h1>
         <div class="intro d2 caps" style="font-size: 18px; letter-spacing: .3em; color: #efe7d6">Energia <span style="color: #d9b25c">•</span> Foco <span style="color: #d9b25c">•</span> Performance</div>
         <p class="intro d3" style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.65; color: #b9ac92; font-weight: 300">O novo <strong style="color: #efe7d6; font-weight: 500">Pré-Treino Thin Body</strong> chegou para acender o seu treino: beta-alanina, arginina, taurina e cafeína em cada dose, no sabor <span style="color: #ff6b7d">frutas vermelhas</span>.</p>
         <div class="intro d3" style="display: flex; flex-wrap: wrap; gap: 16px">
