@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thin Body | Lançamento Pré-Treino, Creatina e Morgen Getränk</title>
+<meta name="description" content="Thin Body: emagrecimento saudável e soluções naturais. Conheça o novo Pré-Treino, a Creatina Monohidratada 100% pura, o Morgen Getränk e a história da marca.">
+<meta name="theme-color" content="#0a0907">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thin Body | Lançamento: Pré-Treino sabor frutas vermelhas">
+<meta property="og:description" content="Morgen Getränk, a nova Creatina e a linha completa Thin Body que está chegando.">
+<meta property="og:image" content="assets/pretreino-mockup.jpg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&amp;family=Marcellus&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0a0907}
+a{color:#e6c46a}a:hover{color:#f6dc95}
+.tb{--gold:#d9b25c;--gold-hi:#f4d98b;--gold-lo:#9a7428;--ink:#0a0907;--ink2:#14110c;--ember:#e0692e;--txt:#efe7d6;--mut:#b9ac92;font-family:'Jost',system-ui,sans-serif;color:var(--txt);background:var(--ink);overflow:hidden;position:relative}
+.tb *{box-sizing:border-box}
+.serif{font-family:'Bodoni Moda',Georgia,serif;font-weight:400}
+.caps{font-family:'Marcellus',Georgia,serif;letter-spacing:.32em;text-transform:uppercase}
+.gold-text{background:linear-gradient(100deg,#9a7428 0%,#f4d98b 22%,#c99a3e 40%,#fff1c4 50%,#c99a3e 60%,#f4d98b 78%,#9a7428 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 7s linear infinite}
+@keyframes shimmer{from{background-position:120% 0}to{background-position:-130% 0}}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-22px) rotate(1.5deg)}}
+@keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.95;transform:scale(1.08)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:1}100%{transform:translateY(-560px) scale(1.1);opacity:0}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes sweep{0%{transform:translateX(-160%) skewX(-18deg)}60%,100%{transform:translateX(260%) skewX(-18deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes slideIn{from{opacity:0;transform:translateX(60px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes scrollDot{0%{transform:translateY(0);opacity:1}80%{transform:translateY(14px);opacity:0}100%{opacity:0}}
+.float{animation:floaty 6.5s ease-in-out infinite}
+.glow{animation:pulse 5s ease-in-out infinite}
+.spin{animation:spin 22s linear infinite}
+.intro{animation:fadeUp 1.1s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}.d4{animation-delay:.6s}
+.particle{position:absolute;bottom:-20px;border-radius:50%;background:radial-gradient(circle,#fff1c4 0%,#d9b25c 45%,rgba(217,178,92,0) 70%);animation:rise linear infinite;pointer-events:none}
+.marquee-track{display:flex;width:max-content;animation:marquee 32s linear infinite}
+.marquee-wrap:hover .marquee-track{animation-play-state:paused}
+.sheen{position:relative;overflow:hidden}
+.sheen::after{content:"";position:absolute;inset:0;width:35%;background:linear-gradient(90deg,rgba(255,241,196,0),rgba(255,241,196,.28),rgba(255,241,196,0));animation:sweep 5.5s ease-in-out infinite;pointer-events:none}
+.btn-gold{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 30px;border-radius:999px;background:linear-gradient(135deg,#f4d98b,#c99a3e 55%,#9a7428);color:#14110c;font-family:'Jost',sans-serif;font-weight:600;font-size:15px;letter-spacing:.06em;text-decoration:none;box-shadow:0 10px 40px -10px rgba(217,178,92,.7),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.btn-gold:hover{color:#14110c;transform:translateY(-3px);box-shadow:0 18px 50px -10px rgba(217,178,92,.9),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-ghost{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;border:1px solid rgba(217,178,92,.45);color:#efe7d6;text-decoration:none;font-size:15px;letter-spacing:.06em;transition:background .35s,border-color .35s}
+.btn-ghost:hover{color:#f4d98b;background:rgba(217,178,92,.08);border-color:#d9b25c}
+.nav a.nl{color:#d8ccb3;text-decoration:none;font-size:14px;letter-spacing:.08em;position:relative;padding:6px 0}
+.nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#d9b25c;transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.nav a.nl:hover{color:#f4d98b}.nav a.nl:hover::after{transform:scaleX(1)}
+.card{border:1px solid rgba(217,178,92,.22);background:linear-gradient(160deg,rgba(255,255,255,.035),rgba(255,255,255,0));border-radius:22px;transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s}
+.card:hover{transform:translateY(-8px);border-color:rgba(244,217,139,.65);box-shadow:0 30px 60px -30px rgba(217,178,92,.45)}
+.slide{display:none}
+.slide.on{display:grid;animation:slideIn .9s cubic-bezier(.2,.7,.2,1) both}
+.dot{width:44px;height:44px;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.dot span{display:block;height:3px;width:28px;border-radius:3px;background:rgba(217,178,92,.3);overflow:hidden;position:relative}
+.dot.on span{width:56px;background:rgba(217,178,92,.25)}
+.dot.on span::after{content:"";position:absolute;inset:0;background:#f4d98b;transform-origin:left;animation:bar 5.5s linear both}
+.arrow{width:52px;height:52px;border-radius:50%;border:1px solid rgba(217,178,92,.45);background:rgba(10,9,7,.4);color:#f4d98b;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s,transform .3s}
+.arrow:hover{background:rgba(217,178,92,.15);transform:scale(1.06)}
+.vid{position:relative;overflow:hidden;border-radius:24px;display:block;text-decoration:none;border:1px solid rgba(217,178,92,.25)}
+.vid img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .8s}
+.vid:hover img{transform:scale(1.07);filter:brightness(1.1)}
+.play{width:78px;height:78px;border-radius:50%;background:rgba(10,9,7,.55);border:1px solid rgba(244,217,139,.8);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);transition:transform .4s}
+.vid:hover .play{transform:scale(1.12)}
+.play::before{content:"";position:absolute;width:78px;height:78px;border-radius:50%;border:1px solid rgba(244,217,139,.6);animation:pulse 2.4s ease-out infinite}
+.step-num{font-family:'Bodoni Moda',serif;font-size:56px;line-height:1}
+.scroll-ind{width:26px;height:42px;border:1px solid rgba(217,178,92,.6);border-radius:14px;display:flex;justify-content:center;padding-top:8px}
+.scroll-ind span{width:3px;height:8px;border-radius:2px;background:#f4d98b;animation:scrollDot 2s ease-in-out infinite}
+.tb ::selection{background:#d9b25c;color:#14110c}
+@supports (animation-timeline: view()){
+.reveal{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.parallax{animation:floaty linear both;animation-timeline:view()}
+}
+@media (max-width: 900px){
+.hero-grid,.about-grid,.slide.on,.duo,.ritual-grid{grid-template-columns:1fr !important}
+.hide-m{display:none !important}
+.hero-title{font-size:52px !important}
+.sec-title{font-size:40px !important}
+.pad{padding-left:22px !important;padding-right:22px !important}
+.nav-links{display:none !important}
+.pillars{grid-template-columns:1fr !important}
+.vid-shade{display:none}
+.vid-cap{position:static !important;padding:22px 20px 24px;flex-direction:column;align-items:flex-start !important}
+.vid-cap .serif{font-size:24px !important}
+.slide-in{padding:36px 22px 90px !important;min-height:0 !important;gap:20px !important}
+.slide-title{font-size:40px !important}
+.slide-media{min-height:300px !important;order:-1}
+.slide-media .glow{width:280px !important;height:280px !important}
+.slide-media img{max-height:300px}
+.dots{left:14px !important;bottom:16px !important}
+}
+
+html{scroll-behavior:smooth}
+@keyframes spinRev{to{transform:rotate(-360deg)}}
+@keyframes auraPulse{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+@keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(217,178,92,.55)}100%{box-shadow:0 0 0 22px rgba(217,178,92,0)}}
+.ring-conic{position:absolute;border-radius:50%;background:conic-gradient(from 0deg,rgba(244,217,139,0) 0deg,#f4d98b 40deg,rgba(244,217,139,0) 110deg,rgba(224,105,46,.0) 180deg,#d9b25c 230deg,rgba(244,217,139,0) 300deg);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 2px));animation:spin 9s linear infinite}
+.orbit{position:absolute;border-radius:50%;animation:spin 26s linear infinite}
+.orbit .sat{position:absolute;left:50%;top:0;transform:translate(-50%,-50%)}
+.orbit .sat img{animation:spinRev 26s linear infinite;display:block}
+.orbit.rev{animation:spinRev 34s linear infinite}
+.orbit.rev .sat img,.orbit.rev .sat span{animation:spin 34s linear infinite}
+.aura{animation:auraPulse 6s ease-in-out infinite}
+.star{position:absolute;width:6px;height:6px;border-radius:50%;background:#fff1c4;box-shadow:0 0 12px 3px rgba(244,217,139,.8);animation:twinkle 3.2s ease-in-out infinite}
+.chapter{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:30px 0;border-top:1px solid rgba(217,178,92,.18)}
+.chapter p{margin:0 0 14px;font-size:17.5px;line-height:1.8;color:#c9bda4;font-weight:300}
+.chapter p:last-child{margin-bottom:0}
+.chapter strong{color:#efe7d6;font-weight:500}
+.val{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;border:1px solid rgba(217,178,92,.35);font-size:15px;color:#efe7d6;background:rgba(217,178,92,.05);transition:background .3s,border-color .3s}
+.val:hover{background:rgba(217,178,92,.14);border-color:#d9b25c}
+.outline-type{color:transparent;-webkit-text-stroke:1px rgba(217,178,92,.55)}
+.post{border:1px solid rgba(217,178,92,.22);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.035),rgba(255,255,255,0));transition:border-color .4s,box-shadow .4s,transform .4s;overflow:hidden}
+.post:hover{border-color:rgba(244,217,139,.6);box-shadow:0 30px 60px -30px rgba(217,178,92,.4)}
+.post[open]{grid-column:1/-1;border-color:rgba(244,217,139,.6);background:linear-gradient(160deg,rgba(217,178,92,.08),rgba(20,17,12,.6))}
+.post summary{list-style:none;cursor:pointer;padding:32px 30px;display:flex;flex-direction:column;gap:14px;min-height:300px}
+.post summary::-webkit-details-marker{display:none}
+.post summary:focus-visible{outline:2px solid #f4d98b;outline-offset:-4px;border-radius:24px}
+.post .more{margin-top:auto;display:inline-flex;align-items:center;gap:8px;color:#f4d98b;font-size:14px;letter-spacing:.08em}
+.post[open] .more .lbl-open{display:none}
+.post .lbl-close{display:none}
+.post[open] .more .lbl-close{display:inline}
+.post[open] .more svg{transform:rotate(180deg)}
+.post .body{padding:0 30px 34px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;animation:fadeUp .6s cubic-bezier(.2,.7,.2,1) both}
+.post .body p{margin:0 0 16px;font-size:17px;line-height:1.8;color:#c9bda4;font-weight:300}
+.post .box{border:1px solid rgba(217,178,92,.3);border-radius:18px;padding:24px;background:rgba(10,9,7,.5);align-self:start}
+.post .box ul{margin:10px 0 0;padding-left:18px;color:#efe7d6;line-height:1.7;font-size:15.5px}
+.post .src{font-size:13.5px;line-height:1.6;color:#b9ac92;margin-top:18px}
+.post .src a{color:#e6c46a}
+.tag{font-family:'Marcellus',serif;letter-spacing:.24em;text-transform:uppercase;font-size:11px;color:#f4d98b;padding:7px 12px;border-radius:999px;border:1px solid rgba(217,178,92,.45)}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;width:46px;height:46px;border-radius:50%;border:1px solid rgba(217,178,92,.45);display:flex;align-items:center;justify-content:center;color:#f4d98b}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav .panel{position:absolute;right:0;top:56px;width:240px;padding:14px;border-radius:18px;background:rgba(20,17,12,.97);border:1px solid rgba(217,178,92,.35);display:flex;flex-direction:column;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.mnav .panel a{color:#efe7d6;text-decoration:none;padding:12px 10px;border-radius:10px;font-size:16px}
+.mnav .panel a:hover{background:rgba(217,178,92,.12);color:#f4d98b}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f4d98b,#c99a3e 55%,#9a7428);color:#14110c;animation:waPulse 2.2s ease-out infinite;box-shadow:0 14px 34px -8px rgba(0,0,0,.7)}
+.wa-float:hover{color:#14110c;transform:scale(1.06)}
+@media (max-width: 900px){
+.mnav{display:block}
+.nav-cta{display:none !important}
+.story-grid,.brand-grid,.mvv{grid-template-columns:1fr !important}
+.blog-grid{grid-template-columns:1fr !important}
+.post .body{grid-template-columns:1fr !important;gap:20px}
+.photo-stage{min-height:520px !important}
+.photo-stage .big{width:430px !important;height:430px !important}
+.quote-big{font-size:30px !important}
+.chapter{grid-template-columns:48px minmax(0,1fr) !important}
+.story-sticky{position:relative !important;top:0 !important}
+}
+
+
+@keyframes ripple{0%{transform:scale(.55);opacity:.85}100%{transform:scale(1.35);opacity:0}}
+@keyframes drop{0%{transform:translateY(0) scale(.5);opacity:0}12%{opacity:1}100%{transform:translateY(-640px) scale(1.2);opacity:0}}
+@keyframes kinetic{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes kineticR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes letterIn{0%{opacity:0;transform:translateY(60%) rotateX(-80deg);filter:blur(6px)}100%{opacity:1;transform:none;filter:none}}
+@keyframes zap{0%,92%,100%{opacity:.25}94%{opacity:1}96%{opacity:.4}98%{opacity:1}}
+@keyframes tiltIn{0%{opacity:0;transform:translateY(80px) scale(.9) rotate(-6deg)}100%{opacity:1;transform:none}}
+@keyframes potFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-26px) rotate(2deg)}}
+@keyframes shine{0%{transform:translateX(-120%) skewX(-20deg)}55%,100%{transform:translateX(220%) skewX(-20deg)}}
+@keyframes iconPop{0%{opacity:0;transform:scale(.4) rotate(-20deg)}70%{transform:scale(1.12)}100%{opacity:1;transform:none}}
+@keyframes glowRed{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+.pt-hero{background:radial-gradient(55% 75% at 70% 50%,rgba(208,31,53,.28) 0%,rgba(46,125,60,.10) 40%,rgba(10,9,7,0) 72%)}
+.kin-bg{position:absolute;left:0;top:50%;transform:translateY(-50%);white-space:nowrap;pointer-events:none;display:flex;width:max-content;animation:kinetic 26s linear infinite}
+.kin-bg span{font-family:'Jost',sans-serif;font-weight:600;font-size:250px;line-height:1;letter-spacing:-.02em;padding-right:80px;color:transparent;-webkit-text-stroke:1.5px rgba(217,178,92,.14)}
+.drop{position:absolute;bottom:-20px;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:radial-gradient(circle at 35% 30%,#ff8a9a 0%,#d01f35 45%,rgba(140,10,30,0) 75%);animation:drop linear infinite;pointer-events:none}
+.ripple{position:absolute;border-radius:50%;border:1.5px solid rgba(224,60,80,.55);animation:ripple 3.6s cubic-bezier(.2,.6,.3,1) infinite}
+.ring-red{position:absolute;border-radius:50%;background:conic-gradient(from 0deg,rgba(208,31,53,0) 0deg,#ff4d63 50deg,rgba(208,31,53,0) 120deg,rgba(244,217,139,0) 180deg,#f4d98b 230deg,rgba(244,217,139,0) 300deg);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 3px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 3px));animation:spin 7s linear infinite}
+.pot-wrap{position:relative;animation:tiltIn 1.4s cubic-bezier(.2,.7,.2,1) both .2s}
+.pot-float{animation:potFloat 6s ease-in-out infinite;transform-style:preserve-3d}
+.pot-shine{position:absolute;inset:0;overflow:hidden;-webkit-mask:url(assets/pretreino-pote.webp) center/contain no-repeat;mask:url(assets/pretreino-pote.webp) center/contain no-repeat;pointer-events:none}
+.pot-shine::after{content:"";position:absolute;top:0;bottom:0;width:30%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.35),rgba(255,255,255,0));animation:shine 4.5s ease-in-out infinite 1.5s}
+.ltr{display:inline-block;animation:letterIn .9s cubic-bezier(.2,.7,.2,1) both}
+.zap{animation:zap 4s linear infinite}
+.redglow{animation:glowRed 4s ease-in-out infinite}
+.kin-band{background:linear-gradient(90deg,#4a0510,#b3122a 30%,#d01f35 50%,#b3122a 70%,#4a0510);overflow:hidden;transform:rotate(-2deg);margin:-30px -40px 0;padding:14px 0;box-shadow:0 20px 60px -20px rgba(208,31,53,.6);position:relative;z-index:3}
+.kin-band2{background:#0f0d09;border-top:1px solid rgba(217,178,92,.35);border-bottom:1px solid rgba(217,178,92,.35);overflow:hidden;transform:rotate(1.4deg);margin:-6px -40px 0;padding:12px 0;position:relative;z-index:2}
+.kin-row{display:flex;width:max-content;animation:kinetic 22s linear infinite}
+.kin-row.r{animation:kineticR 26s linear infinite}
+.kin-row span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;white-space:nowrap;font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.ico-pop{animation:iconPop .8s cubic-bezier(.2,.7,.2,1) both}
+.spot-img{animation:potFloat 7s ease-in-out infinite}
+@supports (animation-timeline: view()){
+.zoom-in{animation:tiltIn linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+.bene{opacity:1;animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+}
+@media (max-width: 900px){
+.kin-bg span{font-size:120px}
+.spot-grid{grid-template-columns:1fr !important}
+.pt-pot{height:440px !important}
+}
+
+@media (prefers-reduced-motion: reduce){.tb *{animation:none !important}}
+</style>
+</head>
+<body>
+<div class="tb" style="width: 100%; min-height: 100vh">
+
+  <!-- NAV -->
+  <header class="nav pad" style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 64px; background: rgba(10,9,7,.72); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(217,178,92,.16)">
+    <a href="#topo" style="display: flex; align-items: center; gap: 14px; text-decoration: none" aria-label="Thin Body — início">
+      <img src="assets/simbolo.webp" alt="" style="height: 34px; width: auto">
+      <span class="caps gold-text" style="font-size: 17px; letter-spacing: .22em">Thin Body</span>
+    </a>
+    <nav class="nav-links" style="display: flex; align-items: center; gap: 38px" aria-label="Seções">
+      <a class="nl" href="#lancamentos">Lançamentos</a>
+      <a class="nl" href="#linha">Produtos</a>
+      <a class="nl" href="#quem-eu-sou">Quem eu sou</a>
+      <a class="nl" href="#marca">A marca</a>
+      <a class="nl" href="#blog">Blog</a>
+    </nav>
+    <details class="mnav">
+      <summary aria-label="Abrir menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
+      <div class="panel">
+        <a href="#lancamentos">Lançamentos</a>
+        <a href="#linha">Produtos</a>
+        <a href="#quem-eu-sou">Quem eu sou</a>
+        <a href="#marca">A marca</a>
+        <a href="#ritual">Ritual matinal</a>
+        <a href="#blog">Blog</a>
+        <a href="https://wa.me/5548996756186">Falar no WhatsApp</a>
+      </div>
+    </details>
+    <a class="btn-gold nav-cta" href="https://wa.me/5548996756186?text=Oi!%20Quero%20saber%20dos%20lan%C3%A7amentos%20Thin%20Body" style="min-height: 46px; padding: 0 24px; font-size: 14px">Quero o Pré-Treino</a>
+  </header>
+
+  <!-- HERO -->
+  <section id="topo" class="pad pt-hero" style="position: relative; padding: 50px 64px 120px; min-height: 900px; display: flex; align-items: center; overflow: hidden">
+    <div class="kin-bg" aria-hidden="true"><span>PRÉ-TREINO</span><span>ENERGIA</span><span>FOCO</span><span>PERFORMANCE</span><span>PRÉ-TREINO</span><span>ENERGIA</span><span>FOCO</span><span>PERFORMANCE</span></div>
+    <div aria-hidden="true" style="position: absolute; inset: 0; overflow: hidden; pointer-events: none"><span class="drop" style="left: 7%; width: 6px; height: 8px; animation-duration: 7s; animation-delay: -0s"></span><span class="drop" style="left: 48%; width: 11px; height: 13px; animation-duration: 10s; animation-delay: -11s"></span><span class="drop" style="left: 89%; width: 7px; height: 18px; animation-duration: 13s; animation-delay: -9s"></span><span class="drop" style="left: 30%; width: 12px; height: 12px; animation-duration: 9s; animation-delay: -7s"></span><span class="drop" style="left: 71%; width: 8px; height: 17px; animation-duration: 12s; animation-delay: -5s"></span><span class="drop" style="left: 12%; width: 13px; height: 11px; animation-duration: 8s; animation-delay: -3s"></span><span class="drop" style="left: 53%; width: 9px; height: 16px; animation-duration: 11s; animation-delay: -1s"></span><span class="drop" style="left: 94%; width: 14px; height: 10px; animation-duration: 7s; animation-delay: -12s"></span><span class="drop" style="left: 35%; width: 10px; height: 15px; animation-duration: 10s; animation-delay: -10s"></span><span class="drop" style="left: 76%; width: 6px; height: 9px; animation-duration: 13s; animation-delay: -8s"></span><span class="drop" style="left: 17%; width: 11px; height: 14px; animation-duration: 9s; animation-delay: -6s"></span><span class="drop" style="left: 58%; width: 7px; height: 8px; animation-duration: 12s; animation-delay: -4s"></span><span class="drop" style="left: 99%; width: 12px; height: 13px; animation-duration: 8s; animation-delay: -2s"></span><span class="drop" style="left: 40%; width: 8px; height: 18px; animation-duration: 11s; animation-delay: -0s"></span><span class="drop" style="left: 81%; width: 13px; height: 12px; animation-duration: 7s; animation-delay: -11s"></span><span class="drop" style="left: 22%; width: 9px; height: 17px; animation-duration: 10s; animation-delay: -9s"></span>
+      
+        <span class="particle" style="left:11%;width:3px;height:3px;animation-duration:9s;animation-delay:0s"></span>
+      
+        <span class="particle" style="left:48%;width:4px;height:4px;animation-duration:14s;animation-delay:-13s"></span>
+      
+        <span class="particle" style="left:85%;width:5px;height:5px;animation-duration:10s;animation-delay:-9s"></span>
+      
+        <span class="particle" style="left:22%;width:6px;height:6px;animation-duration:15s;animation-delay:-5s"></span>
+      
+        <span class="particle" style="left:59%;width:7px;height:7px;animation-duration:11s;animation-delay:-1s"></span>
+      
+        <span class="particle" style="left:96%;width:8px;height:8px;animation-duration:16s;animation-delay:-14s"></span>
+      
+        <span class="particle" style="left:33%;width:3px;height:3px;animation-duration:12s;animation-delay:-10s"></span>
+      
+        <span class="particle" style="left:70%;width:4px;height:4px;animation-duration:17s;animation-delay:-6s"></span>
+      
+        <span class="particle" style="left:7%;width:5px;height:5px;animation-duration:13s;animation-delay:-2s"></span>
+      
+        <span class="particle" style="left:44%;width:6px;height:6px;animation-duration:9s;animation-delay:-15s"></span>
+      
+        <span class="particle" style="left:81%;width:7px;height:7px;animation-duration:14s;animation-delay:-11s"></span>
+      
+        <span class="particle" style="left:18%;width:8px;height:8px;animation-duration:10s;animation-delay:-7s"></span>
+      
+        <span class="particle" style="left:55%;width:3px;height:3px;animation-duration:15s;animation-delay:-3s"></span>
+      
+        <span class="particle" style="left:92%;width:4px;height:4px;animation-duration:11s;animation-delay:-16s"></span>
+      
+        <span class="particle" style="left:29%;width:5px;height:5px;animation-duration:16s;animation-delay:-12s"></span>
+      
+        <span class="particle" style="left:66%;width:6px;height:6px;animation-duration:12s;animation-delay:-8s"></span>
+      
+        <span class="particle" style="left:3%;width:7px;height:7px;animation-duration:17s;animation-delay:-4s"></span>
+      
+        <span class="particle" style="left:40%;width:8px;height:8px;animation-duration:13s;animation-delay:0s"></span>
+      
+    </div>
+
+    <div class="hero-grid" style="position: relative; width: 100%; max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 30px; align-items: center">
+      <div style="display: flex; flex-direction: column; gap: 26px; position: relative; z-index: 2">
+        <div class="intro" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+          <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; background: linear-gradient(90deg,#b3122a,#d01f35); color: #fff; letter-spacing: .24em; box-shadow: 0 0 30px -4px rgba(208,31,53,.8)">Lançamento</span>
+          <span class="caps" style="font-size: 12px; color: #e6c46a">Novo · Thin Body Suplementos</span>
+        </div>
+        <h1 class="hero-title" style="margin: 0; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 104px; line-height: .92; letter-spacing: -.02em; color: #f4f1ea; perspective: 600px"><span class="ltr" style="animation-delay: 0.25s">P</span><span class="ltr" style="animation-delay: 0.31s">R</span><span class="ltr" style="animation-delay: 0.37s">É</span><span class="ltr" style="animation-delay: 0.43s">-</span><span class="ltr" style="animation-delay: 0.49s">T</span><span class="ltr" style="animation-delay: 0.55s">R</span><span class="ltr" style="animation-delay: 0.61s">E</span><span class="ltr" style="animation-delay: 0.67s">I</span><span class="ltr" style="animation-delay: 0.73s">N</span><span class="ltr" style="animation-delay: 0.79s">O</span></h1>
+        <div class="intro d2 caps" style="font-size: 18px; letter-spacing: .3em; color: #efe7d6">Energia <span style="color: #d9b25c">•</span> Foco <span style="color: #d9b25c">•</span> Performance</div>
+        <p class="intro d3" style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.65; color: #b9ac92; font-weight: 300">O novo <strong style="color: #efe7d6; font-weight: 500">Pré-Treino Thin Body</strong> chegou para acender o seu treino: beta-alanina, arginina, taurina e cafeína em cada dose, no sabor <span style="color: #ff6b7d">frutas vermelhas</span>.</p>
+        <div class="intro d3" style="display: flex; flex-wrap: wrap; gap: 16px">
+          <a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Pr%C3%A9-Treino%20Thin%20Body">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg>
+            Quero o meu Pré-Treino
+          </a>
+          <a class="btn-ghost" href="#lancamentos">Ver detalhes
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>
+          </a>
+        </div>
+        <div class="intro d4" style="display: flex; gap: 38px; padding-top: 14px; border-top: 1px solid rgba(217,178,92,.18); max-width: 540px">
+          <div><div class="serif gold-text" style="font-size: 34px">200 mg</div><div style="font-size: 13px; color: #b9ac92; letter-spacing: .06em">cafeína por dose</div></div>
+          <div><div class="serif gold-text" style="font-size: 34px">2 g</div><div style="font-size: 13px; color: #b9ac92; letter-spacing: .06em">beta-alanina</div></div>
+          <div><div class="serif gold-text" style="font-size: 34px">30</div><div style="font-size: 13px; color: #b9ac92; letter-spacing: .06em">doses · 300 g</div></div>
+        </div>
+      </div>
+
+      <div style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 720px">
+        <div class="redglow" aria-hidden="true" style="position: absolute; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(255,77,99,.45) 0%, rgba(208,31,53,.18) 40%, rgba(10,9,7,0) 70%)"></div>
+        <div class="ripple" aria-hidden="true" style="width: 520px; height: 520px"></div>
+        <div class="ripple" aria-hidden="true" style="width: 520px; height: 520px; animation-delay: -1.2s"></div>
+        <div class="ripple" aria-hidden="true" style="width: 520px; height: 520px; animation-delay: -2.4s"></div>
+        <div class="ring-red" aria-hidden="true" style="width: 600px; height: 600px"></div>
+        <div aria-hidden="true" class="spin" style="position: absolute; width: 680px; height: 680px; border-radius: 50%; border: 1px dashed rgba(217,178,92,.22)"></div>
+        <div aria-hidden="true" style="position: absolute; bottom: 40px; width: 380px; height: 50px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.8), rgba(0,0,0,0))"></div>
+        <div class="pot-wrap"><div id="potTilt">
+          <div class="pot-float">
+            <img class="pt-pot" src="assets/pretreino-pote.webp" alt="Pote do Pré-Treino Thin Body, sabor frutas vermelhas, 300 g" style="display: block; height: 620px; max-height: 88vw; width: auto; filter: drop-shadow(0 60px 70px rgba(0,0,0,.85)) drop-shadow(0 0 50px rgba(208,31,53,.35))">
+            <div class="pot-shine" aria-hidden="true"></div>
+          </div>
+        </div></div>
+        <div class="hide-m zap" aria-hidden="true" style="position: absolute; left: 4%; top: 18%"><svg width="54" height="54" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg></div>
+        <div class="hide-m zap" aria-hidden="true" style="position: absolute; right: 6%; bottom: 22%; animation-delay: -2s"><svg width="38" height="38" viewBox="0 0 24 24" fill="#ff6b7d"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg></div>
+        <div class="hide-m" style="position: absolute; right: 0; top: 4%; width: 150px; height: 150px">
+          <svg class="spin" viewBox="0 0 200 200" width="150" height="150" role="img" aria-label="Lançamento: Pré-Treino Thin Body">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"></path></defs>
+            <circle cx="100" cy="100" r="98" fill="rgba(10,9,7,.65)" stroke="rgba(255,107,125,.6)"></circle>
+            <text fill="#f4d98b" font-family="Marcellus, serif" font-size="15" letter-spacing="4.4"><textPath href="#circ">LANÇAMENTO · PRÉ-TREINO · THIN BODY · </textPath></text>
+          </svg>
+          <img src="assets/simbolo.webp" alt="" style="position: absolute; left: 50%; top: 50%; width: 58px; transform: translate(-50%, -50%)">
+        </div>
+        <div class="hide-m card" style="position: absolute; left: 0; bottom: 110px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; background: rgba(20,17,12,.85); backdrop-filter: blur(10px)">
+          <span style="width: 10px; height: 10px; border-radius: 50%; background: #ff4d63; box-shadow: 0 0 0 6px rgba(255,77,99,.2)"></span>
+          <div><div class="caps" style="font-size: 11px; color: #e6c46a">Sabor</div><div style="font-size: 15px">Frutas vermelhas</div></div>
+        </div>
+      </div>
+    </div>
+    <a href="#lancamentos" class="hide-m" aria-label="Rolar para os lançamentos" style="position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); text-decoration: none; z-index: 4"><div class="scroll-ind"><span></span></div></a>
+  </section>
+
+  <!-- KINETIC BANDS -->
+  <div aria-hidden="true" style="position: relative; overflow: hidden; padding: 0 0 30px">
+    <div class="kin-band"><div class="kin-row">
+      <span style="font-size: 30px; color: #fff">Pré-treino <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Energia <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Foco <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Performance <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg></span>
+      <span style="font-size: 30px; color: #fff">Pré-treino <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Energia <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Foco <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg> Performance <svg width="22" height="22" viewBox="0 0 24 24" fill="#f4d98b"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg></span>
+    </div></div>
+    <div class="kin-band2"><div class="kin-row r">
+      <span class="caps" style="font-family: 'Marcellus', serif; font-size: 17px; color: #d9b25c; letter-spacing: .3em">Lançamento Thin Body ✦ Sabor frutas vermelhas ✦ 300 g ✦ Lançamento Thin Body ✦ Sabor frutas vermelhas ✦ 300 g ✦</span>
+      <span class="caps" style="font-family: 'Marcellus', serif; font-size: 17px; color: #d9b25c; letter-spacing: .3em">Lançamento Thin Body ✦ Sabor frutas vermelhas ✦ 300 g ✦ Lançamento Thin Body ✦ Sabor frutas vermelhas ✦ 300 g ✦</span>
+    </div></div>
+  </div>
+
+  <!-- LANÇAMENTOS: PRÉ-TREINO SPOTLIGHT -->
+  <section id="lancamentos" class="pad" style="position: relative; padding: 90px 64px 60px; overflow: hidden">
+    <div aria-hidden="true" style="position: absolute; left: -10%; top: 10%; width: 60%; height: 80%; background: radial-gradient(closest-side, rgba(208,31,53,.18), rgba(10,9,7,0))"></div>
+    <div class="spot-grid" style="position: relative; max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 70px; align-items: center">
+      <div class="zoom-in" style="position: relative">
+        <div class="sheen" style="border-radius: 32px; overflow: hidden; border: 1px solid rgba(217,178,92,.35); box-shadow: 0 60px 120px -40px rgba(0,0,0,.95), 0 0 90px -30px rgba(208,31,53,.55)">
+          <img class="spot-img" src="assets/pretreino-mockup.jpg" alt="Pré-Treino Thin Body em fundo preto" style="display: block; width: 100%; height: auto">
+        </div>
+        <div class="card hide-m" style="position: absolute; right: -24px; top: 40px; padding: 16px 20px; background: rgba(20,17,12,.9); backdrop-filter: blur(10px)">
+          <div class="caps" style="font-size: 11px; color: #e6c46a">Por dose (10 g)</div>
+          <div class="serif" style="font-size: 26px">12 kcal</div>
+        </div>
+      </div>
+      <div>
+        <div class="reveal caps" style="font-size: 13px; color: #ff6b7d; display: flex; align-items: center; gap: 12px"><span style="width: 40px; height: 1px; background: #ff6b7d"></span>Lançamento · Pré-Treino</div>
+        <h2 class="reveal serif sec-title" style="margin: 18px 0 22px; font-size: 64px; line-height: 1.02">Seu treino em outro <span class="gold-text" style="font-style: italic">nível.</span></h2>
+        <p class="reveal" style="margin: 0 0 34px; font-size: 18px; line-height: 1.75; color: #b9ac92; font-weight: 300; max-width: 560px">Fórmula pensada para quem quer chegar no treino com disposição e foco, no sabor frutas vermelhas, para tomar com prazer antes de cada sessão.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+          <div class="card bene" style="padding: 22px; display: flex; gap: 16px; align-items: flex-start">
+            <div class="ico-pop" style="flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid #d9b25c; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4d98b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg></div>
+            <div><h3 class="caps" style="margin: 0 0 6px; font-size: 14px; letter-spacing: .16em; color: #efe7d6">Energia e disposição</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #b9ac92; font-weight: 300">200 mg de cafeína por dose.</p></div>
+          </div>
+          <div class="card bene" style="padding: 22px; display: flex; gap: 16px; align-items: flex-start">
+            <div class="ico-pop" style="flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid #d9b25c; display: flex; align-items: center; justify-content: center; animation-delay: .15s"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4d98b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3h.5V4z"></path><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3h-.5V4z"></path></svg></div>
+            <div><h3 class="caps" style="margin: 0 0 6px; font-size: 14px; letter-spacing: .16em; color: #efe7d6">Foco mental</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #b9ac92; font-weight: 300">Com L-tirosina e taurina na fórmula.</p></div>
+          </div>
+          <div class="card bene" style="padding: 22px; display: flex; gap: 16px; align-items: flex-start">
+            <div class="ico-pop" style="flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid #d9b25c; display: flex; align-items: center; justify-content: center; animation-delay: .3s"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4d98b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"></path></svg></div>
+            <div><h3 class="caps" style="margin: 0 0 6px; font-size: 14px; letter-spacing: .16em; color: #efe7d6">Resistência e performance</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #b9ac92; font-weight: 300">2 g de beta-alanina e 2.000 mg de arginina.</p></div>
+          </div>
+          <div class="card bene" style="padding: 22px; display: flex; gap: 16px; align-items: flex-start">
+            <div class="ico-pop" style="flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid #d9b25c; display: flex; align-items: center; justify-content: center; animation-delay: .45s"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f4d98b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.8 7-7 0-4-3-6.5-4.5-10-1 2.5-2.5 3.5-3.5 4 0-2-1-4-3-6 .3 3.5-4 6.5-4 12 0 4.2 3.5 7 8 7z"></path></svg></div>
+            <div><h3 class="caps" style="margin: 0 0 6px; font-size: 14px; letter-spacing: .16em; color: #efe7d6">Sabor frutas vermelhas</h3><p style="margin: 0; font-size: 15px; line-height: 1.6; color: #b9ac92; font-weight: 300">30 doses de 10 g no pote de 300 g.</p></div>
+          </div>
+        </div>
+        <div class="reveal" style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 34px">
+          <a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Pr%C3%A9-Treino%20Thin%20Body">Garantir o meu Pré-Treino</a>
+          <a class="btn-ghost" href="#videos">Ver também a Creatina</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEO DO LANÇAMENTO -->
+  <section id="videos" class="pad" style="position: relative; padding: 40px 64px 110px">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px">
+        <div>
+          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px; display: flex; align-items: center; gap: 12px">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #e0692e; box-shadow: 0 0 0 5px rgba(224,105,46,.2)"></span>
+            Acabou de chegar
+          </div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">Nosso novo lançamento: <span class="gold-text" style="font-style: italic">Creatina.</span></h2>
+        </div>
+        <a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20a%20Creatina%20Thin%20Body">Garantir minha Creatina</a>
+      </div>
+      <div class="vid reveal" style="background: #000; border-radius: 32px; box-shadow: 0 60px 120px -40px rgba(0,0,0,.9), 0 0 80px -20px rgba(217,178,92,.25)">
+        <video src="assets/creatina-lancamento.mp4" autoplay muted loop playsinline preload="auto" poster="assets/creatina-hd.jpg" aria-label="Vídeo de lançamento da Creatina Thin Body: bastidores da produção" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover"></video>
+        <div class="vid-shade" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,9,7,0) 60%, rgba(10,9,7,.85)); pointer-events: none"></div>
+        <div class="vid-cap" style="position: absolute; left: 36px; right: 36px; bottom: 30px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+          <div>
+            <div class="caps" style="font-size: 12px; color: #e6c46a">Creatina Monohidratada · 100% pura · 300g</div>
+            <div class="serif" style="font-size: 30px; color: #efe7d6; margin-top: 8px">Mais força, mais desempenho, mais foco.</div>
+          </div>
+          <a class="btn-ghost" href="https://www.instagram.com/thinbodyoficial/reel/Df0f5qBtkKR/" style="min-height: 46px; background: rgba(10,9,7,.5)">Ver com som no Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" style="border-top: 1px solid rgba(217,178,92,.25); border-bottom: 1px solid rgba(217,178,92,.25); background: linear-gradient(90deg,#14110c,#1c170f,#14110c); padding: 22px 0; overflow: hidden">
+    <div class="marquee-track">
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Pré-Treino</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Lançamento</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Creatina</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Lançamento</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Morgen Getränk</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Ritual matinal</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Nova linha</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Em breve</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Energia &amp; foco</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Soluções naturais</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Autoestima</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Resultados reais</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Pré-Treino</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Lançamento</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Creatina</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Lançamento</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Morgen Getränk</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Ritual matinal</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Nova linha</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Em breve</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Energia &amp; foco</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Soluções naturais</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Autoestima</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Resultados reais</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
+        </div>
+      
+    </div>
+  </div>
+
+  <!-- CAROUSEL / A LINHA -->
+  <section id="linha" class="pad" style="position: relative; padding: 130px 64px 120px">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 56px">
+        <div>
+          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px">A linha Thin Body</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">Feita para o seu <span class="gold-text" style="font-style: italic">dia a dia</span></h2>
+        </div>
+        <div style="display: flex; gap: 12px">
+          <button class="arrow" type="button" aria-label="Produto anterior" data-prev><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></button>
+          <button class="arrow" type="button" aria-label="Próximo produto" data-next><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+        </div>
+      </div>
+
+      <div class="card" style="position: relative; overflow: hidden; border-radius: 32px; min-height: 600px; background: radial-gradient(80% 90% at 80% 50%, rgba(217,178,92,.14), rgba(20,17,12,.9) 60%), #14110c">
+        
+          <div class="slide on slide-in" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 60px 70px; min-height: 600px">
+            <div style="display: flex; flex-direction: column; gap: 22px">
+              <div style="display: flex; align-items: center; gap: 14px">
+                <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(217,178,92,.5); color: #f4d98b">Lançamento</span>
+                <span class="serif" style="font-size: 15px; color: #b9ac92; font-style: italic">01 / 04</span>
+              </div>
+              <h3 class="serif slide-title" style="margin: 0; font-size: 58px; line-height: 1">Pré-Treino</h3>
+              <div class="caps" style="font-size: 13px; color: #d9b25c">Energia · Foco · Performance</div>
+              <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 480px">Beta-alanina, arginina, taurina e cafeína em cada dose, no sabor frutas vermelhas. 300 g, 30 doses.</p>
+              <div><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Pr%C3%A9-Treino%20Thin%20Body">Quero o meu</a></div>
+            </div>
+            <div class="slide-media" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 480px">
+              <div class="glow" aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(255,77,99,.42), rgba(10,9,7,0) 70%)"></div>
+              <img class="float" src="assets/pretreino-pote.webp" alt="Pote do Pré-Treino Thin Body" style="position:relative;height:460px;max-height:82%;width:auto;filter:drop-shadow(0 40px 50px rgba(0,0,0,.8))">
+            </div>
+          </div>
+        
+          <div class="slide  slide-in" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 60px 70px; min-height: 600px">
+            <div style="display: flex; flex-direction: column; gap: 22px">
+              <div style="display: flex; align-items: center; gap: 14px">
+                <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(217,178,92,.5); color: #f4d98b">Lançamento</span>
+                <span class="serif" style="font-size: 15px; color: #b9ac92; font-style: italic">02 / 04</span>
+              </div>
+              <h3 class="serif slide-title" style="margin: 0; font-size: 58px; line-height: 1">Creatina Monohidratada</h3>
+              <div class="caps" style="font-size: 13px; color: #d9b25c">100% pura · 300g</div>
+              <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 480px">Mais força, mais desempenho e mais foco nos seus objetivos. Prepare-se para elevar seus resultados a outro nível.</p>
+              <div><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20a%20Creatina%20Thin%20Body">Garantir a minha</a></div>
+            </div>
+            <div class="slide-media" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 480px">
+              <div class="glow" aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(244,217,139,.4), rgba(10,9,7,0) 70%)"></div>
+              <img class="float" src="assets/creatina-hd.jpg" alt="Creatina Monohidratada Thin Body" style="position:relative;width:440px;max-width:86%;aspect-ratio:820/720;object-fit:cover;border-radius:28px;box-shadow:0 50px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(217,178,92,.35)">
+            </div>
+          </div>
+        
+          <div class="slide  slide-in" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 60px 70px; min-height: 600px">
+            <div style="display: flex; flex-direction: column; gap: 22px">
+              <div style="display: flex; align-items: center; gap: 14px">
+                <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(217,178,92,.5); color: #f4d98b">Queridinho</span>
+                <span class="serif" style="font-size: 15px; color: #b9ac92; font-style: italic">03 / 04</span>
+              </div>
+              <h3 class="serif slide-title" style="margin: 0; font-size: 58px; line-height: 1">Morgen Getränk</h3>
+              <div class="caps" style="font-size: 13px; color: #d9b25c">Chá branco · chá verde · hibisco · açafrão · gengibre</div>
+              <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 480px">O seu morning shot: mistura para o preparo de chás, sabor limão, para começar o dia com leveza e intenção.</p>
+              <div><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Morgen%20Getr%C3%A4nk">Quero o meu</a></div>
+            </div>
+            <div class="slide-media" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 480px">
+              <div class="glow" aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(70,160,105,.42), rgba(10,9,7,0) 70%)"></div>
+              <img class="float" src="assets/morgen.webp" alt="Pote do Morgen Getränk Thin Body, rótulo verde e dourado" style="position:relative;height:440px;max-height:80%;width:auto;filter:drop-shadow(0 40px 50px rgba(0,0,0,.75))">
+            </div>
+          </div>
+        
+          <div class="slide  slide-in" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; padding: 60px 70px; min-height: 600px">
+            <div style="display: flex; flex-direction: column; gap: 22px">
+              <div style="display: flex; align-items: center; gap: 14px">
+                <span class="caps" style="font-size: 12px; padding: 8px 16px; border-radius: 999px; border: 1px solid rgba(217,178,92,.5); color: #f4d98b">Em breve</span>
+                <span class="serif" style="font-size: 15px; color: #b9ac92; font-style: italic">04 / 04</span>
+              </div>
+              <h3 class="serif slide-title" style="margin: 0; font-size: 58px; line-height: 1">O próximo é segredo</h3>
+              <div class="caps" style="font-size: 13px; color: #d9b25c">Nova linha Thin Body</div>
+              <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 480px">Ainda não podemos revelar muito, mas uma coisa é certa: vem algo especial por aí. Consegue adivinhar?</p>
+              <div><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20ser%20avisada%20do%20pr%C3%B3ximo%20lan%C3%A7amento">Quero ser avisada</a></div>
+            </div>
+            <div class="slide-media" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 480px">
+              <div class="glow" aria-hidden="true" style="position: absolute; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(224,105,46,.35), rgba(10,9,7,0) 70%)"></div>
+              <img class="float" src="assets/lancamento.jpg" alt="Pote misterioso com ponto de interrogação dourado" style="position:relative;width:360px;max-width:82%;border-radius:28px;box-shadow:0 50px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(217,178,92,.35)">
+            </div>
+          </div>
+        
+        <div class="dots" style="position: absolute; left: 70px; bottom: 26px; display: flex; gap: 4px">
+          
+            <button type="button" class="dot on" aria-label="Ver Pré-Treino" data-go="0"><span></span></button>
+          
+            <button type="button" class="dot " aria-label="Ver Creatina Monohidratada" data-go="1"><span></span></button>
+          
+            <button type="button" class="dot " aria-label="Ver Morgen Getränk" data-go="2"><span></span></button>
+          
+            <button type="button" class="dot " aria-label="Ver O próximo é segredo" data-go="3"><span></span></button>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM EU SOU -->
+  <section id="quem-eu-sou" class="pad" style="position: relative; padding: 130px 64px 110px; background: linear-gradient(180deg, #0a0907, #15110a 40%, #0a0907)">
+    <div aria-hidden="true" class="serif hide-m" style="position: absolute; left: 30px; top: 40px; font-size: 230px; line-height: 1; color: rgba(217,178,92,.045); font-style: italic; white-space: nowrap; pointer-events: none">Quem eu sou</div>
+    <div class="story-grid" style="position: relative; max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 70px; align-items: start">
+
+      <div class="story-sticky" style="position: sticky; top: 100px">
+        <div class="photo-stage reveal" style="position: relative; min-height: 680px; display: flex; align-items: flex-end; justify-content: center">
+          <div class="aura" aria-hidden="true" style="position: absolute; left: 50%; top: 46%; width: 560px; height: 560px; margin: -280px 0 0 -280px; border-radius: 50%; background: radial-gradient(circle, rgba(244,217,139,.42) 0%, rgba(217,178,92,.16) 38%, rgba(10,9,7,0) 68%)"></div>
+          <img aria-hidden="true" alt="" src="assets/simbolo.webp" style="position: absolute; left: 50%; top: 40%; width: 420px; transform: translate(-50%, -50%); opacity: .08; filter: blur(1px)">
+          <div class="big" aria-hidden="true" style="position: absolute; left: 50%; top: 46%; width: 540px; height: 540px; transform: translate(-50%, -50%)">
+            <div class="ring-conic" style="inset: 0"></div>
+            <div style="position: absolute; inset: 22px; border-radius: 50%; border: 1px solid rgba(217,178,92,.28)"></div>
+            <div style="position: absolute; inset: -26px; border-radius: 50%; border: 1px dashed rgba(217,178,92,.2)"></div>
+            <div class="orbit" style="inset: -26px">
+              <div class="sat"><img src="assets/simbolo.webp" alt="" style="width: 54px; filter: drop-shadow(0 0 14px rgba(244,217,139,.7))"></div>
+            </div>
+            <div class="orbit rev" style="inset: 22px">
+              <div class="sat"><span class="star" style="position: relative; display: block"></span></div>
+            </div>
+          </div>
+          <span class="star" aria-hidden="true" style="left: 12%; top: 20%; animation-delay: -.4s"></span>
+          <span class="star" aria-hidden="true" style="left: 86%; top: 30%; animation-delay: -1.2s"></span>
+          <span class="star" aria-hidden="true" style="left: 8%; top: 64%; animation-delay: -2s"></span>
+          <span class="star" aria-hidden="true" style="left: 90%; top: 70%; animation-delay: -2.6s"></span>
+          <span class="star" aria-hidden="true" style="left: 50%; top: 6%; animation-delay: -1.7s"></span>
+          <img src="assets/tamires.webp" alt="Fundadora da Thin Body" style="position: relative; width: 88%; max-width: 470px; display: block; filter: drop-shadow(0 40px 60px rgba(0,0,0,.65)); -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent)">
+          <div class="hide-m" style="position: absolute; right: -6px; top: 40px; width: 140px; height: 140px">
+            <svg class="spin" viewBox="0 0 200 200" width="140" height="140" role="img" aria-label="Sua mudança começa com você">
+              <defs><path id="circ2" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"></path></defs>
+              <circle cx="100" cy="100" r="98" fill="rgba(10,9,7,.7)" stroke="rgba(217,178,92,.55)"></circle>
+              <text fill="#e6c46a" font-family="Marcellus, serif" font-size="13.5" letter-spacing="3.6"><textPath href="#circ2">SUA MUDANÇA COMEÇA COM VOCÊ · THIN BODY · </textPath></text>
+            </svg>
+            <img src="assets/simbolo.webp" alt="" style="position: absolute; left: 50%; top: 50%; width: 52px; transform: translate(-50%, -50%)">
+          </div>
+          <div class="card" style="position: absolute; left: 0; bottom: 70px; padding: 16px 22px; display: flex; align-items: center; gap: 14px; background: rgba(20,17,12,.88); backdrop-filter: blur(10px)">
+            <img src="assets/logo.webp" alt="Thin Body" style="height: 46px; width: auto">
+            <div>
+              <div class="caps" style="font-size: 11px; color: #e6c46a">Fundadora</div>
+              <div class="serif" style="font-size: 20px">Criadora da Thin Body</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal caps" style="font-size: 13px; color: #e6c46a; display: flex; align-items: center; gap: 14px"><span style="width: 40px; height: 1px; background: #d9b25c"></span>Quem eu sou · A história da Thin Body</div>
+        <h2 class="reveal serif sec-title" style="margin: 20px 0 34px; font-size: 68px; line-height: 1.02">Uma transformação que virou <span class="gold-text" style="font-style: italic">propósito.</span></h2>
+
+        <div class="chapter reveal">
+          <div class="step-num gold-text" style="font-size: 40px">01</div>
+          <div>
+            <div class="caps" style="font-size: 13px; color: #efe7d6; letter-spacing: .24em; margin-bottom: 14px">O acidente</div>
+            <p><strong>A Thin Body nasceu de uma experiência que mudou a minha vida.</strong></p>
+            <p>Tudo começou quando sofri um acidente de bicicleta. Eu ainda não era uma ciclista profissional, estava apenas começando, mas já tinha descoberto uma paixão por esse tipo de atividade. Pedalar era algo que eu amava, e fazia parte da vida ativa que eu estava construindo.</p>
+            <p>No entanto, aquele acidente mudou completamente o rumo da minha rotina. Sofri fraturas em três pontos na região abaixo dos olhos e em quatro pontos na região bucomaxilofacial. Também houve suspeita de traumatismo cranioencefálico. Foi um momento delicado, que me afastou dos exercícios físicos e me obrigou a desacelerar, justamente quando eu estava começando a descobrir o quanto gostava de me movimentar e cuidar de mim.</p>
+          </div>
+        </div>
+
+        <div class="chapter reveal">
+          <div class="step-num gold-text" style="font-size: 40px">02</div>
+          <div>
+            <div class="caps" style="font-size: 13px; color: #efe7d6; letter-spacing: .24em; margin-bottom: 14px">O recomeço</div>
+            <p>Com o passar do tempo, meu corpo mudou, ganhei peso e precisei lidar com uma realidade diferente daquela que imaginava para mim. Mais do que recuperar a minha forma física, comecei a sentir a necessidade de recuperar minha disposição, autoestima, saúde e qualidade de vida.</p>
+            <p>Foi durante esse processo que percebi a importância de olhar para mim mesma com mais carinho e atenção. Entendi que cuidar do corpo vai muito além da estética: envolve saúde, bem-estar, equilíbrio e a maneira como nos sentimos ao longo da nossa jornada.</p>
+          </div>
+        </div>
+
+        <div class="chapter reveal">
+          <div class="step-num gold-text" style="font-size: 40px">03</div>
+          <div>
+            <div class="caps" style="font-size: 13px; color: #efe7d6; letter-spacing: .24em; margin-bottom: 14px">Nasce a Thin Body</div>
+            <p><strong>Foi assim que nasceu a Thin Body.</strong></p>
+            <p>O que começou como uma busca pessoal por emagrecimento e bem-estar se transformou em um propósito muito maior: criar uma marca que pudesse inspirar outras pessoas a retomarem seus objetivos, desenvolverem hábitos mais saudáveis e acreditarem na própria capacidade de mudança.</p>
+            <p>A Thin Body representa a minha história, os desafios que enfrentei e a vontade de transformar uma experiência difícil em algo positivo. Representa disciplina, motivação, autoestima e a construção de uma rotina mais saudável, respeitando o tempo e os limites de cada pessoa.</p>
+          </div>
+        </div>
+
+        <div class="chapter reveal">
+          <div class="step-num gold-text" style="font-size: 40px">04</div>
+          <div>
+            <div class="caps" style="font-size: 13px; color: #efe7d6; letter-spacing: .24em; margin-bottom: 14px">O propósito</div>
+            <p>Eu sei que recomeçar nem sempre é fácil, porque precisei encontrar meu próprio caminho. Sei que existem fases em que precisamos parar, nos adaptar e descobrir novas formas de seguir em frente.</p>
+            <p>Por isso, quero que a Thin Body seja muito mais do que uma marca de suplementos. Quero que seja uma marca com propósito, que incentive as pessoas a cuidarem de si mesmas e a entenderem que cada pequena conquista faz parte de uma transformação maior.</p>
+            <p><strong>A Thin Body nasceu de uma mudança na minha vida e hoje carrega a missão de inspirar mudanças na vida de outras pessoas.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="position: relative; max-width: 1080px; margin: 70px auto 0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 26px">
+      <svg width="54" height="40" viewBox="0 0 46 34" aria-hidden="true"><path d="M0 34V20C0 8 6 1 18 0v6C11 8 8 12 8 18h10v16H0zm28 0V20C28 8 34 1 46 0v6c-7 2-10 6-10 12h10v16H28z" fill="#d9b25c" opacity=".75"></path></svg>
+      <p class="serif quote-big" style="margin: 0; font-size: 44px; line-height: 1.25; font-style: italic; color: #efe7d6">Porque, às vezes, uma experiência que transforma nossos planos também nos ajuda a descobrir um <span class="gold-text">novo propósito.</span></p>
+      <div style="display: flex; align-items: center; gap: 16px">
+        <img src="assets/simbolo.webp" alt="" style="height: 36px; width: auto">
+        <span class="caps" style="font-size: 14px; color: #e6c46a">Thin Body — Sua mudança começa com você.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- A MARCA -->
+  <section id="marca" class="pad" style="position: relative; padding: 120px 64px; overflow: hidden">
+    <div aria-hidden="true" class="serif hide-m outline-type" style="position: absolute; left: 50%; top: 40px; transform: translateX(-50%); font-size: 190px; line-height: 1; white-space: nowrap; pointer-events: none">Thin Body</div>
+    <div style="position: relative; max-width: 1320px; margin: 0 auto">
+      <div class="brand-grid" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 70px; align-items: end; margin-bottom: 64px; padding-top: 90px">
+        <div class="reveal">
+          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px">A marca</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 66px; line-height: 1.02">Mais do que suplementos. Uma marca com <span class="gold-text" style="font-style: italic">propósito.</span></h2>
+        </div>
+        <p class="reveal" style="margin: 0; font-size: 19px; line-height: 1.75; color: #b9ac92; font-weight: 300">A Thin Body existe para quem quer emagrecer com saúde, sem extremos e sem fórmulas mágicas. Unimos ingredientes naturais, rotina possível e muito incentivo, para que cada pessoa retome seus objetivos no seu próprio tempo. Emagrecimento saudável que cabe na sua rotina.</p>
+      </div>
+
+      <div class="mvv" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
+          <div class="caps" style="font-size: 12px; color: #e6c46a">Missão</div>
+          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Inspirar mudanças na vida das pessoas</h3>
+          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Incentivar cada pessoa a cuidar de si mesma e a entender que cada pequena conquista faz parte de uma transformação maior.</p>
+        </div>
+        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
+          <div class="caps" style="font-size: 12px; color: #e6c46a">Posicionamento</div>
+          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Emagrecimento saudável que cabe na rotina</h3>
+          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Soluções naturais, práticas e premium, para mulheres reais que querem energia, foco e autoestima sem abrir mão da vida.</p>
+        </div>
+        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
+          <div class="caps" style="font-size: 12px; color: #e6c46a">Promessa</div>
+          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Sua mudança começa com você</h3>
+          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Respeitando o tempo e os limites de cada pessoa: recomeçar quantas vezes for preciso, sem desistir de si.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top: 50px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px">
+        <span class="caps" style="font-size: 12px; color: #b9ac92; margin-right: 6px">Nossos valores</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Disciplina</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Motivação</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Autoestima</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Rotina saudável</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Respeito ao seu tempo</span>
+      </div>
+
+      <div class="pillars" style="margin-top: 64px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21c-5-3-8-6.5-8-11a8 8 0 0 1 16 0c0 4.5-3 8-8 11z"></path><path d="M12 7v8M9 10l3-3 3 3"></path></svg>
+          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Emagrecimento saudável</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Constância e escolhas que cabem na sua vida.</p></div>
+        </div>
+        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"></path><path d="M5 19l7-7"></path></svg>
+          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Soluções naturais</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Chás, ervas e ingredientes de verdade.</p></div>
+        </div>
+        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg>
+          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Energia, foco e autoestima</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Resultados que você sente no dia a dia.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RITUAL -->
+  <section id="ritual" class="pad" style="padding: 130px 64px">
+    <div class="ritual-grid" style="max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 80px; align-items: center">
+      <div class="reveal" style="display: flex; flex-direction: column; gap: 24px">
+        <div class="caps" style="font-size: 13px; color: #e6c46a">Seu novo ritual matinal</div>
+        <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">Comece pelo <span class="gold-text" style="font-style: italic">simples.</span></h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #b9ac92; font-weight: 300; max-width: 460px">Pequenos hábitos, praticados todos os dias, transformam a forma como você se sente. Seu novo ritual começa com uma escolha: cuidar de você.</p>
+        <div class="sheen" style="border-radius: 26px; overflow: hidden; max-width: 460px; border: 1px solid rgba(217,178,92,.25)">
+          <img src="assets/lancamento.jpg" alt="Pote misterioso Thin Body com ponto de interrogação dourado: em breve um novo produto" style="display: block; width: 100%; aspect-ratio: 512 / 420; object-fit: cover; object-position: center 62%">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        
+          <div class="reveal" style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px; align-items: start; padding: 34px 0; border-bottom: 1px solid rgba(217,178,92,.2)">
+            <div class="step-num gold-text">01</div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <h3 class="caps" style="margin: 0; font-size: 18px; letter-spacing: .2em; color: #efe7d6">Tome seu morning shot</h3>
+              <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #b9ac92; font-weight: 300">Morgen Getränk logo cedo: chá branco, chá verde, hibisco, açafrão e gengibre num gole só.</p>
+            </div>
+          </div>
+        
+          <div class="reveal" style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px; align-items: start; padding: 34px 0; border-bottom: 1px solid rgba(217,178,92,.2)">
+            <div class="step-num gold-text">02</div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <h3 class="caps" style="margin: 0; font-size: 18px; letter-spacing: .2em; color: #efe7d6">Movimente seu corpo</h3>
+              <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #b9ac92; font-weight: 300">Treino, caminhada ou alongamento — com a Creatina como aliada de força e desempenho.</p>
+            </div>
+          </div>
+        
+          <div class="reveal" style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px; align-items: start; padding: 34px 0; border-bottom: 1px solid rgba(217,178,92,.2)">
+            <div class="step-num gold-text">03</div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <h3 class="caps" style="margin: 0; font-size: 18px; letter-spacing: .2em; color: #efe7d6">Hidrate-se bem</h3>
+              <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #b9ac92; font-weight: 300">Seu corpo pede mais água do que você imagina. Deixe a garrafa sempre por perto.</p>
+            </div>
+          </div>
+        
+          <div class="reveal" style="display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px; align-items: start; padding: 34px 0; border-bottom: 1px solid rgba(217,178,92,.2)">
+            <div class="step-num gold-text">04</div>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <h3 class="caps" style="margin: 0; font-size: 18px; letter-spacing: .2em; color: #efe7d6">Reserve um tempo para você</h3>
+              <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #b9ac92; font-weight: 300">Alguns minutos com calma e intenção. Cuidar de você também é rotina.</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="pad" style="position: relative; padding: 120px 64px 130px; border-top: 1px solid rgba(217,178,92,.18)">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 50px">
+        <div>
+          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px">Blog Thin Body · Ciência &amp; bem-estar</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">O que a ciência diz sobre <span class="gold-text" style="font-style: italic">emagrecer</span></h2>
+        </div>
+        <p style="margin: 0; max-width: 420px; font-size: 16px; line-height: 1.7; color: #b9ac92; font-weight: 300">Pesquisas e estudos explicados de um jeito simples, com as fontes originais. Clique em um artigo para ler.</p>
+      </div>
+      <div class="blog-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start">
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Suplementos</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Creatina também é para mulheres</h3>
+            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Por muito tempo vista como suplemento “de homem na academia”, a creatina é uma das substâncias mais estudadas da nutrição esportiva — e as mulheres têm muito a ganhar com ela.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Revisões científicas recentes mostram que mulheres respondem à creatina de forma parecida com os homens: mais força, melhor desempenho nos treinos e melhora da composição corporal, principalmente quando ela vem junto com treino de força.</p><p>Um detalhe importante: mulheres costumam ter estoques menores de creatina nos músculos, o que ajuda a explicar por que podem se beneficiar da suplementação. Pesquisas também vêm estudando efeitos no humor, na cognição e, após a menopausa, na massa muscular e na saúde dos ossos quando a creatina é combinada com musculação.</p><p>Ainda há perguntas em aberto — por exemplo, sobre o período da perimenopausa —, mas o conjunto das evidências coloca a creatina como uma aliada segura e bem documentada para mulheres ativas.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <ul><li>Funciona melhor junto com treino de força.</li><li>A dose mais usada fica entre 3 e 5 g por dia, todos os dias.</li><li>Não precisa de fase de “saturação” para ter benefício.</li><li>Na dúvida, converse com seu nutricionista.</li></ul>
+              <div class="src">Fontes: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7998865/">Smith-Ryan et al., Nutrients (2021)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12086928/">Creatine in women’s health (2025)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/39796530/">Nutrients (2024)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Pesquisa</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Chá verde emagrece? O que as meta-análises dizem</h3>
+            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">As catequinas do chá verde, como o EGCG, são estudadas há anos. A resposta honesta: ajudam um pouco — e funcionam melhor dentro de uma rotina.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Uma meta-análise publicada no International Journal of Obesity concluiu que as catequinas do chá verde, junto com a cafeína, têm um efeito positivo, porém pequeno, na perda e na manutenção de peso.</p><p>Outra revisão, no American Journal of Clinical Nutrition, encontrou em média cerca de 1,4 kg a menos de peso e quase 2 cm a menos de cintura com catequinas e cafeína, comparado à cafeína sozinha. Já a revisão Cochrane apontou que, em estudos feitos fora do Japão, a diferença foi pequena demais para fazer diferença clínica sozinha.</p><p>Por isso o chá verde faz sentido como parte de um ritual — hidratação, um começo de dia com intenção, menos bebidas açucaradas — e não como solução isolada.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <ul><li>Use o chá como ritual, não como milagre.</li><li>Prefira trocar bebidas açucaradas pelo chá.</li><li>Combine com sono, movimento e boa alimentação.</li></ul>
+              <div class="src">Fontes: <a href="https://pubmed.ncbi.nlm.nih.gov/19597519/">Hursel et al., Int J Obes (2009)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/19906797/">Phung et al., AJCN (2010)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/23235664/">Cochrane (2012)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #b9ac92">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Dormir mais pode fazer você comer menos</h3>
+            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Um estudo publicado no JAMA Internal Medicine mostrou que dormir um pouco mais reduziu a quantidade de calorias consumidas por dia — sem nenhuma dieta.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Pesquisadores da Universidade de Chicago acompanharam 80 adultos com sobrepeso que dormiam menos de 6,5 horas por noite. Depois de uma única conversa sobre higiene do sono, o grupo passou a dormir, em média, 1,2 hora a mais por noite.</p><p>O resultado chamou atenção: esse grupo passou a consumir, em média, cerca de 270 calorias a menos por dia, mesmo sem nenhuma orientação de dieta ou exercício e vivendo a rotina normal em casa.</p><p>Segundo a pesquisadora, reduzir o uso de telas antes de dormir pareceu ser uma das mudanças mais importantes.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <ul><li>Defina um horário fixo para deitar.</li><li>Deixe o celular longe da cama.</li><li>Um quarto escuro e fresco ajuda a dormir melhor.</li></ul>
+              <div class="src">Fonte: <a href="https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/getting-more-sleep-reduces-caloric-intake">Tasali et al., JAMA Internal Medicine (2022)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #b9ac92">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">O copo d’água antes da refeição</h3>
+            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Um hábito simples, testado em estudo clínico: beber água antes das principais refeições ajudou a perder mais peso.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Em um estudo publicado na revista Obesity, 48 adultos de 55 a 75 anos seguiram uma dieta com menos calorias por 12 semanas. Metade deles bebia 500 ml de água antes de cada refeição principal.</p><p>O grupo que bebeu água antes das refeições perdeu cerca de 2 kg a mais do que o grupo que fez só a dieta. Os pesquisadores observaram que a água reduzia a quantidade de comida ingerida logo em seguida.</p><p>O estudo foi feito com adultos mais velhos, mas o hábito é simples, barato e fácil de encaixar em qualquer rotina.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <ul><li>Cerca de 2 copos de água uns 30 minutos antes das refeições.</li><li>Deixe uma garrafa sempre por perto.</li><li>Troque refrigerantes e sucos adoçados por água ou chá.</li></ul>
+              <div class="src">Fonte: <a href="https://pubmed.ncbi.nlm.nih.gov/19661958/">Dennis et al., Obesity (2010)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Nutrição</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Proteína: a aliada da saciedade</h3>
+            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Comer proteína suficiente ajuda a sentir menos fome e a preservar músculo enquanto você emagrece.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Revisões científicas mostram que a proteína costuma dar mais saciedade do que carboidratos e gorduras, além de aumentar um pouco o gasto de energia da digestão.</p><p>Em um estudo com 46 mulheres que seguiram uma dieta com déficit calórico por 12 semanas, quem comeu mais proteína perdeu bem menos massa magra (cerca de 1,5 kg contra 2,8 kg), com perda de peso parecida.</p><p>Preservar músculo é importante: ele ajuda a manter o metabolismo e a disposição, e evita o efeito sanfona.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <ul><li>Inclua uma fonte de proteína em cada refeição.</li><li>Ovos, iogurte, frango, peixe e leguminosas são ótimas opções.</li><li>A quantidade ideal é individual: procure um nutricionista.</li></ul>
+              <div class="src">Fontes: <a href="https://pubmed.ncbi.nlm.nih.gov/25926512/">Leidy et al., AJCN (2015)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/17299116/">Obesity (2007)</a></div>
+            </div>
+          </div>
+        </details>
+      </div>
+      <p style="margin: 36px 0 0; font-size: 13.5px; color: #8f846f; text-align: center">Conteúdo informativo, baseado em estudos publicados. Não substitui a orientação de médico ou nutricionista.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="pad" style="position: relative; padding: 140px 64px; text-align: center; overflow: hidden; border-top: 1px solid rgba(217,178,92,.18)">
+    <div class="glow" aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; margin: -450px 0 0 -450px; border-radius: 50%; background: radial-gradient(circle, rgba(217,178,92,.22), rgba(10,9,7,0) 65%)"></div>
+    <div class="reveal" style="position: relative; max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px">
+      <img src="assets/logo.webp" alt="Thin Body" style="width: 170px; height: auto">
+      <h2 class="serif sec-title" style="margin: 0; font-size: 70px; line-height: 1.02">A linha completa está <span class="gold-text" style="font-style: italic">chegando.</span></h2>
+      <p style="margin: 0; font-size: 19px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 600px">Entre na lista pelo WhatsApp e seja a primeira a saber de cada lançamento, com condições especiais para quem chega antes.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
+        <a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20entrar%20na%20lista%20de%20lan%C3%A7amentos%20Thin%20Body">Quero ser avisada primeiro</a>
+        <a class="btn-ghost" href="https://www.instagram.com/thinbodyoficial/">@thinbodyoficial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pad" style="padding: 40px 64px; border-top: 1px solid rgba(217,178,92,.18); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; font-size: 14px; color: #b9ac92">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <img src="assets/simbolo.webp" alt="" style="height: 28px; width: auto">
+      <span class="caps" style="font-size: 13px; color: #d9b25c">Thin Body</span>
+      <span>· Suplementos naturais</span>
+    </div>
+    <div style="display: flex; gap: 28px; flex-wrap: wrap">
+      <a href="#quem-eu-sou">Quem eu sou</a>
+      <a href="#blog">Blog</a>
+      <a href="https://wa.me/5548996756186">WhatsApp (48) 99675-6186</a>
+      <a href="https://www.instagram.com/thinbodyoficial/">Instagram</a>
+    </div>
+  </footer>
+  <a class="wa-float" href="https://wa.me/5548996756186?text=Oi!%20Vim%20pelo%20site%20da%20Thin%20Body" aria-label="Falar com a Thin Body no WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.3-5.1A8.4 8.4 0 1 1 21 11.5z"></path></svg></a>
+</div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide')), dots=[].slice.call(document.querySelectorAll('.dot')), i=0, t;
+  function show(n){ i=(n+slides.length)%slides.length; slides.forEach(function(s,k){s.classList.toggle('on',k===i)}); dots.forEach(function(d,k){d.classList.toggle('on',k===i); d.setAttribute('aria-current',k===i?'true':'false')}); }
+  function start(){ clearInterval(t); if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; t=setInterval(function(){show(i+1)},5500); }
+  dots.forEach(function(d){ d.addEventListener('click',function(){ show(+d.getAttribute('data-go')); start(); }); });
+  var p=document.querySelector('[data-prev]'), n=document.querySelector('[data-next]');
+  if(p) p.addEventListener('click',function(){show(i-1);start();});
+  if(n) n.addEventListener('click',function(){show(i+1);start();});
+  start();
+  if(!CSS.supports('animation-timeline: view()') && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.style.animation='fadeUp 1s cubic-bezier(.2,.7,.2,1) both'; io.unobserve(e.target);} })},{threshold:.15});
+    document.querySelectorAll('.reveal,.bene,.zoom-in').forEach(function(el){ el.style.opacity=0; io.observe(el); });
+  }
+  var pt=document.getElementById('potTilt');
+  if(pt && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var hero=document.getElementById('topo');
+    hero.addEventListener('mousemove',function(e){var r=hero.getBoundingClientRect();var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;pt.style.transform='perspective(900px) rotateY('+(x*18)+'deg) rotateX('+(-y*12)+'deg) translate('+(x*20)+'px,'+(y*14)+'px)';});
+    hero.addEventListener('mouseleave',function(){pt.style.transform='';});
+    pt.style.transition='transform .25s ease-out';
+  }
+  var v=document.querySelector('video'); if(v){ v.muted=true; var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){}); }
+})();
+</script>
+</body>
+</html>
