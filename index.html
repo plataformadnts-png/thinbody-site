@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thin Body | Lançamento Pré-Treino, Creatina e Morgen Getränk</title>
-<meta name="description" content="Thin Body: emagrecimento saudável e soluções naturais. Conheça o novo Pré-Treino, a Creatina Monohidratada 100% pura, o Morgen Getränk e a história da marca.">
+<meta name="description" content="Thin Body: nutrição para alta performance, qualidade de vida, longevidade e emagrecimento saudável. Conheça o novo Pré-Treino, a Creatina Monohidratada 100% pura, o Morgen Getränk e a história da marca.">
 <meta name="theme-color" content="#0a0907">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Thin Body | Lançamento: Pré-Treino sabor frutas vermelhas">
@@ -203,6 +203,42 @@ html{scroll-behavior:smooth}
 .pt-title{font-size:clamp(54px, 8.6vw, 96px) !important}
 }
 @media (max-width: 900px){.pt-title{font-size:clamp(46px, 14vw, 72px) !important}}
+
+.light{background:linear-gradient(180deg,#fbf8f1 0%,#f4ede0 100%);color:#1a1610}
+.light .gold-text{background-image:linear-gradient(100deg,#6e4b0e 0%,#b8862e 25%,#8a6416 45%,#d2a54c 55%,#7a5410 100%)}
+.light .card{background:#fff;border-color:rgba(176,137,58,.28);box-shadow:0 20px 50px -35px rgba(90,64,20,.45)}
+.light .card:hover{border-color:#b8862e;box-shadow:0 34px 70px -34px rgba(120,86,24,.5)}
+.light .val{color:#1a1610;background:#fff;border-color:rgba(176,137,58,.45)}
+.light .val:hover{background:#fbf3e0;border-color:#b8862e}
+.light .tag{color:#8a6416;border-color:rgba(176,137,58,.55)}
+.light .post{background:#fff;border-color:rgba(176,137,58,.3)}
+.blog-grid > .post:first-child{grid-column:1/-1}
+.blog-grid > .post:first-child summary{min-height:0}
+.light .post:hover{border-color:#b8862e;box-shadow:0 30px 60px -34px rgba(120,86,24,.45)}
+.light .post[open]{background:#fffdf8;border-color:#b8862e}
+.light .post .more{color:#8a6416}
+.light .post .body p{color:#4f473a}
+.light .post .box{background:#f7f0e1;border-color:rgba(176,137,58,.4)}
+.light .post .box ul{color:#1a1610}
+.light .post .src{color:#6b604f}
+.light .post .src a{color:#8a6416}
+.light .btn-ghost{color:#1a1610;border-color:rgba(138,100,22,.5)}
+.light .btn-ghost:hover{color:#8a6416;background:rgba(184,134,46,.08)}
+.light .outline-type{-webkit-text-stroke:1px rgba(176,137,58,.35)}
+.gold-rule{height:1px;background:linear-gradient(90deg,rgba(184,134,46,0),#c99a3e,rgba(184,134,46,0))}
+.prod{display:flex;flex-direction:column;overflow:hidden;border-radius:26px}
+.prod .ph{position:relative;height:330px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.prod .ph img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.prod:hover .ph img{transform:scale(1.06) rotate(-1.5deg)}
+.chip{display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#f6efe0;color:#5a4410;font-size:12.5px;letter-spacing:.04em;border:1px solid rgba(176,137,58,.3)}
+.aud{border-radius:22px;padding:30px 26px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.aud .n{font-family:'Bodoni Moda',serif;font-size:60px;line-height:.8;position:absolute;right:18px;top:16px;color:rgba(176,137,58,.16)}
+.soon{position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(120deg,#14110c 0%,#241c0f 55%,#3a2a10 100%);border:1px solid rgba(217,178,92,.55);box-shadow:0 40px 90px -40px rgba(90,64,20,.7)}
+.soon::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg,rgba(244,217,139,0),rgba(244,217,139,.16),rgba(244,217,139,0) 30%);animation:spin 14s linear infinite;pointer-events:none}
+@media (max-width: 900px){
+.prod-grid,.aud-grid,.soon-grid{grid-template-columns:1fr !important}
+}
+
 @media (prefers-reduced-motion: reduce){.tb *{animation:none !important}}
 </style>
 </head>
@@ -217,7 +253,7 @@ html{scroll-behavior:smooth}
     </a>
     <nav class="nav-links" style="display: flex; align-items: center; gap: 38px" aria-label="Seções">
       <a class="nl" href="#lancamentos">Lançamentos</a>
-      <a class="nl" href="#linha">Produtos</a>
+      <a class="nl" href="#produtos">Produtos</a>
       <a class="nl" href="#quem-eu-sou">Quem eu sou</a>
       <a class="nl" href="#marca">A marca</a>
       <a class="nl" href="#blog">Blog</a>
@@ -226,7 +262,7 @@ html{scroll-behavior:smooth}
       <summary aria-label="Abrir menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
       <div class="panel">
         <a href="#lancamentos">Lançamentos</a>
-        <a href="#linha">Produtos</a>
+        <a href="#produtos">Produtos</a>
         <a href="#quem-eu-sou">Quem eu sou</a>
         <a href="#marca">A marca</a>
         <a href="#ritual">Ritual matinal</a>
@@ -350,6 +386,81 @@ html{scroll-behavior:smooth}
     </div></div>
   </div>
 
+  <!-- PRODUTOS (CLARO) -->
+  <section id="produtos" class="pad light" style="position: relative; padding: 110px 64px 120px">
+    <div style="max-width: 1320px; margin: 0 auto">
+      <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 50px">
+        <div>
+          <div class="caps" style="font-size: 13px; color: #8a6416; margin-bottom: 16px; display: flex; align-items: center; gap: 12px"><span style="width: 40px; height: 1px; background: #b8862e"></span>Nossos produtos</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 62px; line-height: 1.02; color: #1a1610">Nutrição para quem <span class="gold-text" style="font-style: italic">quer mais.</span></h2>
+        </div>
+        <p style="margin: 0; max-width: 470px; font-size: 17px; line-height: 1.7; color: #5a5040">Performance no treino, energia no dia a dia e saúde para viver bem por muitos anos. Cada produto Thin Body nasce para uma parte da sua rotina.</p>
+      </div>
+      <div class="prod-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; align-items: stretch">
+        <article class="card prod reveal">
+          <div class="ph" style="background: radial-gradient(70% 80% at 50% 55%, rgba(208,31,53,.22), rgba(255,255,255,0) 70%), linear-gradient(180deg,#fff7f2,#f8ece6)">
+            <span class="caps" style="position: absolute; left: 18px; top: 18px; z-index: 2; font-size: 11px; padding: 7px 13px; border-radius: 999px; background: linear-gradient(90deg,#b3122a,#d01f35); color: #fff; letter-spacing: .2em">Lançamento</span>
+            <img src="assets/pretreino-pote.webp" alt="Pré-Treino" style="height: 290px; width: auto; filter: drop-shadow(0 26px 30px rgba(0,0,0,.45))">
+          </div>
+          <div style="padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+            <div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Alta performance</div>
+            <h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.05; color: #1a1610">Pré-Treino</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Energia, foco e performance para chegar no treino no seu melhor. Beta-alanina, arginina, taurina, L-tirosina e cafeína.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px"><span class="chip">300 g</span><span class="chip">30 doses</span><span class="chip">Frutas vermelhas</span><span class="chip">200 mg cafeína</span></div>
+            <div style="margin-top: auto; padding-top: 10px"><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Pr%C3%A9-Treino%20Thin%20Body" style="min-height: 46px; padding: 0 22px; font-size: 14px">Quero o Pré-Treino</a></div>
+          </div>
+        </article>
+        <article class="card prod reveal">
+          <div class="ph" style="background: #0d0b08">
+            <span class="caps" style="position: absolute; left: 18px; top: 18px; z-index: 2; font-size: 11px; padding: 7px 13px; border-radius: 999px; background: linear-gradient(90deg,#7a5410,#b8862e); color: #fff; letter-spacing: .2em">Lançamento</span>
+            <img src="assets/creatina-hd.jpg" alt="Creatina Monohidratada" style="width: 100%; height: 100%; object-fit: cover; object-position: 35% center">
+          </div>
+          <div style="padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+            <div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Força · Longevidade</div>
+            <h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.05; color: #1a1610">Creatina Monohidratada</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Um dos suplementos mais estudados do mundo: força, desempenho e preservação de massa muscular ao longo da vida, para homens e mulheres.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px"><span class="chip">100% pura</span><span class="chip">300 g</span><span class="chip">Monohidratada</span></div>
+            <div style="margin-top: auto; padding-top: 10px"><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20a%20Creatina%20Thin%20Body" style="min-height: 46px; padding: 0 22px; font-size: 14px">Quero a Creatina</a></div>
+          </div>
+        </article>
+        <article class="card prod reveal">
+          <div class="ph" style="background: radial-gradient(70% 80% at 50% 55%, rgba(46,138,76,.22), rgba(255,255,255,0) 70%), linear-gradient(180deg,#f3faf3,#e8f3e6)">
+            <span class="caps" style="position: absolute; left: 18px; top: 18px; z-index: 2; font-size: 11px; padding: 7px 13px; border-radius: 999px; background: linear-gradient(90deg,#1f6b3a,#2e8a4c); color: #fff; letter-spacing: .2em">Queridinho</span>
+            <img src="assets/morgen.webp" alt="Morgen Getränk" style="height: 270px; width: auto; filter: drop-shadow(0 26px 30px rgba(0,0,0,.35))">
+          </div>
+          <div style="padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+            <div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Qualidade de vida</div>
+            <h3 class="serif" style="margin: 0; font-size: 32px; line-height: 1.05; color: #1a1610">Morgen Getränk</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">O ritual matinal da Thin Body: chá branco, chá verde, hibisco, açafrão e gengibre para começar o dia com leveza e intenção.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px"><span class="chip">250 g</span><span class="chip">Sabor limão</span><span class="chip">5 ingredientes</span></div>
+            <div style="margin-top: auto; padding-top: 10px"><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20o%20Morgen%20Getr%C3%A4nk" style="min-height: 46px; padding: 0 22px; font-size: 14px">Quero o meu Morgen</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="soon reveal" style="margin-top: 40px">
+        <div class="soon-grid" style="position: relative; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: 30px; align-items: center; padding: 46px 50px">
+          <div style="display: flex; flex-direction: column; gap: 18px">
+            <div style="display: flex; align-items: center; gap: 12px"><span class="caps" style="font-size: 11px; padding: 7px 13px; border-radius: 999px; border: 1px solid rgba(244,217,139,.6); color: #f4d98b; letter-spacing: .22em">Em breve</span><img src="assets/simbolo.webp" alt="" style="height: 26px; width: auto"></div>
+            <h3 class="serif" style="margin: 0; font-size: 50px; line-height: 1.02; color: #efe7d6">Nossa linha completa <span class="gold-text" style="font-style: italic">está chegando.</span></h3>
+            <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #cbbfa6; max-width: 560px">Novos produtos para cada objetivo: render mais no treino, ter mais disposição, cuidar da saúde a longo prazo e emagrecer com equilíbrio. Entre na lista e seja a primeira pessoa a saber.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px">
+              <span class="val" style="font-size: 14px; padding: 10px 16px">Alta performance</span>
+              <span class="val" style="font-size: 14px; padding: 10px 16px">Qualidade de vida</span>
+              <span class="val" style="font-size: 14px; padding: 10px 16px">Longevidade</span>
+              <span class="val" style="font-size: 14px; padding: 10px 16px">Emagrecimento saudável</span>
+            </div>
+            <div style="padding-top: 6px"><a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20ser%20avisada%20dos%20lan%C3%A7amentos%20Thin%20Body">Quero ser avisada primeiro</a></div>
+          </div>
+          <div style="position: relative; display: flex; justify-content: center">
+            <div class="glow" aria-hidden="true" style="position: absolute; inset: 10%; border-radius: 50%; background: radial-gradient(circle, rgba(244,217,139,.35), rgba(0,0,0,0) 70%)"></div>
+            <img class="float" src="assets/lancamento.jpg" alt="Pote misterioso com ponto de interrogação dourado: novo produto Thin Body em breve" style="position: relative; width: 300px; max-width: 90%; border-radius: 24px; box-shadow: 0 40px 80px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(217,178,92,.4)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- LANÇAMENTOS: PRÉ-TREINO SPOTLIGHT -->
   <section id="lancamentos" class="pad" style="position: relative; padding: 90px 64px 60px; overflow: hidden">
     <div aria-hidden="true" style="position: absolute; left: -10%; top: 10%; width: 60%; height: 80%; background: radial-gradient(closest-side, rgba(208,31,53,.18), rgba(10,9,7,0))"></div>
@@ -460,16 +571,16 @@ html{scroll-behavior:smooth}
         </div>
       
         <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
-          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Soluções naturais</span>
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Longevidade</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
           <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
         </div>
       
         <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
-          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Autoestima</span>
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Qualidade de vida</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
-          <span class="caps" style="font-size: 16px; color: #d9b25c">Resultados reais</span>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Alta performance</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
         </div>
       
@@ -509,16 +620,16 @@ html{scroll-behavior:smooth}
         </div>
       
         <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
-          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Soluções naturais</span>
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Longevidade</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
           <span class="caps" style="font-size: 16px; color: #d9b25c">Thin Body</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
         </div>
       
         <div style="display: flex; align-items: center; gap: 34px; padding-right: 34px; white-space: nowrap">
-          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Autoestima</span>
+          <span class="serif" style="font-size: 30px; font-style: italic; color: #efe7d6">Qualidade de vida</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
-          <span class="caps" style="font-size: 16px; color: #d9b25c">Resultados reais</span>
+          <span class="caps" style="font-size: 16px; color: #d9b25c">Alta performance</span>
           <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>
         </div>
       
@@ -723,58 +834,39 @@ html{scroll-behavior:smooth}
     </div>
   </section>
 
-  <!-- A MARCA -->
-  <section id="marca" class="pad" style="position: relative; padding: 120px 64px; overflow: hidden">
+  <!-- A MARCA (CLARO) -->
+  <section id="marca" class="pad light" style="position: relative; padding: 120px 64px; overflow: hidden">
     <div aria-hidden="true" class="serif hide-m outline-type" style="position: absolute; left: 50%; top: 40px; transform: translateX(-50%); font-size: 190px; line-height: 1; white-space: nowrap; pointer-events: none">Thin Body</div>
     <div style="position: relative; max-width: 1320px; margin: 0 auto">
-      <div class="brand-grid" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 70px; align-items: end; margin-bottom: 64px; padding-top: 90px">
+      <div class="brand-grid" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 70px; align-items: end; margin-bottom: 56px; padding-top: 90px">
         <div class="reveal">
-          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px">A marca</div>
-          <h2 class="serif sec-title" style="margin: 0; font-size: 66px; line-height: 1.02">Mais do que suplementos. Uma marca com <span class="gold-text" style="font-style: italic">propósito.</span></h2>
+          <div class="caps" style="font-size: 13px; color: #8a6416; margin-bottom: 18px">A marca · Posicionamento</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 62px; line-height: 1.03; color: #1a1610">Nutrição para <span class="gold-text" style="font-style: italic">performance, saúde e longevidade.</span></h2>
         </div>
-        <p class="reveal" style="margin: 0; font-size: 19px; line-height: 1.75; color: #b9ac92; font-weight: 300">A Thin Body existe para quem quer emagrecer com saúde, sem extremos e sem fórmulas mágicas. Unimos ingredientes naturais, rotina possível e muito incentivo, para que cada pessoa retome seus objetivos no seu próprio tempo. Emagrecimento saudável que cabe na sua rotina.</p>
-      </div>
-
-      <div class="mvv" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
-        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
-          <div class="caps" style="font-size: 12px; color: #e6c46a">Missão</div>
-          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Inspirar mudanças na vida das pessoas</h3>
-          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Incentivar cada pessoa a cuidar de si mesma e a entender que cada pequena conquista faz parte de uma transformação maior.</p>
-        </div>
-        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
-          <div class="caps" style="font-size: 12px; color: #e6c46a">Posicionamento</div>
-          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Emagrecimento saudável que cabe na rotina</h3>
-          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Soluções naturais, práticas e premium, para mulheres reais que querem energia, foco e autoestima sem abrir mão da vida.</p>
-        </div>
-        <div class="card reveal" style="padding: 38px 34px; display: flex; flex-direction: column; gap: 16px">
-          <div class="caps" style="font-size: 12px; color: #e6c46a">Promessa</div>
-          <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15">Sua mudança começa com você</h3>
-          <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Respeitando o tempo e os limites de cada pessoa: recomeçar quantas vezes for preciso, sem desistir de si.</p>
+        <div class="reveal" style="display: flex; flex-direction: column; gap: 16px">
+          <p style="margin: 0; font-size: 18.5px; line-height: 1.75; color: #5a5040">A Thin Body é uma marca de nutrição e suplementação para pessoas que querem viver melhor: render mais no treino, ter energia no dia a dia e cuidar do corpo pensando nos próximos anos. O emagrecimento saudável faz parte, mas a nossa visão é maior.</p>
+          <p style="margin: 0; font-size: 18.5px; line-height: 1.75; color: #5a5040">Unimos ciência, ingredientes de qualidade e muito incentivo para que cada pessoa evolua no seu próprio tempo.</p>
         </div>
       </div>
 
-      <div class="reveal" style="margin-top: 50px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px">
-        <span class="caps" style="font-size: 12px; color: #b9ac92; margin-right: 6px">Nossos valores</span>
-        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Disciplina</span>
-        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Motivação</span>
-        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Autoestima</span>
-        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Rotina saudável</span>
-        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#d9b25c"></path></svg>Respeito ao seu tempo</span>
+      <div class="gold-rule" style="margin-bottom: 46px"></div>
+      <div class="caps reveal" style="font-size: 13px; color: #8a6416; margin-bottom: 22px; text-align: center">Para quem é a Thin Body</div>
+      <div class="aud-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+        <div class="card aud reveal"><span class="n" aria-hidden="true">01</span><div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Para você que busca</div><h3 class="serif" style="margin: 0; font-size: 28px; line-height: 1.1; color: #1a1610">Alta performance</h3><p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Para quem treina sério e quer chegar no treino com energia, foco e força.</p></div>
+        <div class="card aud reveal"><span class="n" aria-hidden="true">02</span><div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Para você que busca</div><h3 class="serif" style="margin: 0; font-size: 28px; line-height: 1.1; color: #1a1610">Qualidade de vida</h3><p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Para quem quer mais disposição e bem-estar em cada fase da rotina.</p></div>
+        <div class="card aud reveal"><span class="n" aria-hidden="true">03</span><div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Para você que busca</div><h3 class="serif" style="margin: 0; font-size: 28px; line-height: 1.1; color: #1a1610">Longevidade</h3><p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Para quem pensa no longo prazo: músculo, saúde e autonomia por muitos anos.</p></div>
+        <div class="card aud reveal"><span class="n" aria-hidden="true">04</span><div class="caps" style="font-size: 11.5px; color: #8a6416; letter-spacing: .22em">Para você que busca</div><h3 class="serif" style="margin: 0; font-size: 28px; line-height: 1.1; color: #1a1610">Emagrecimento saudável</h3><p style="margin: 0; font-size: 15.5px; line-height: 1.65; color: #5a5040">Para quem quer emagrecer com equilíbrio, sem extremos e sem fórmulas mágicas.</p></div>
       </div>
 
-      <div class="pillars" style="margin-top: 64px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
-        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21c-5-3-8-6.5-8-11a8 8 0 0 1 16 0c0 4.5-3 8-8 11z"></path><path d="M12 7v8M9 10l3-3 3 3"></path></svg>
-          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Emagrecimento saudável</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Constância e escolhas que cabem na sua vida.</p></div>
-        </div>
-        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"></path><path d="M5 19l7-7"></path></svg>
-          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Soluções naturais</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Chás, ervas e ingredientes de verdade.</p></div>
-        </div>
-        <div class="reveal" style="display: flex; gap: 18px; align-items: flex-start; padding: 26px 4px; border-top: 1px solid rgba(217,178,92,.25)">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#e6c46a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"></path></svg>
-          <div><h3 class="serif" style="margin: 0 0 8px; font-size: 24px">Energia, foco e autoestima</h3><p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Resultados que você sente no dia a dia.</p></div>
-        </div>
+      <div class="mvv" style="margin-top: 56px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+        <div class="reveal" style="padding: 8px 4px; border-top: 2px solid #b8862e"><div class="caps" style="font-size: 12px; color: #8a6416; margin: 18px 0 10px">Missão</div><h3 class="serif" style="margin: 0 0 10px; font-size: 26px; color: #1a1610">Inspirar mudanças na vida das pessoas</h3><p style="margin: 0; color: #5a5040; line-height: 1.7">Incentivar cada pessoa a cuidar de si e a entender que cada pequena conquista faz parte de uma transformação maior.</p></div>
+        <div class="reveal" style="padding: 8px 4px; border-top: 2px solid #b8862e"><div class="caps" style="font-size: 12px; color: #8a6416; margin: 18px 0 10px">Visão</div><h3 class="serif" style="margin: 0 0 10px; font-size: 26px; color: #1a1610">Uma linha completa de nutrição</h3><p style="margin: 0; color: #5a5040; line-height: 1.7">Produtos premium para performance, qualidade de vida, longevidade e emagrecimento saudável, com a mesma qualidade em cada pote.</p></div>
+        <div class="reveal" style="padding: 8px 4px; border-top: 2px solid #b8862e"><div class="caps" style="font-size: 12px; color: #8a6416; margin: 18px 0 10px">Promessa</div><h3 class="serif" style="margin: 0 0 10px; font-size: 26px; color: #1a1610">Sua mudança começa com você</h3><p style="margin: 0; color: #5a5040; line-height: 1.7">Respeitando o tempo e os limites de cada pessoa: recomeçar quantas vezes for preciso, sem desistir de si.</p></div>
+      </div>
+
+      <div class="reveal" style="margin-top: 50px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px">
+        <span class="caps" style="font-size: 12px; color: #5a5040; margin-right: 6px">Nossos valores</span>
+        <span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Disciplina</span><span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Motivação</span><span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Autoestima</span><span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Ciência</span><span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Rotina saudável</span><span class="val"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="#b8862e"></path></svg>Respeito ao seu tempo</span>
       </div>
     </div>
   </section>
@@ -828,28 +920,60 @@ html{scroll-behavior:smooth}
     </div>
   </section>
 
-  <!-- BLOG -->
-  <section id="blog" class="pad" style="position: relative; padding: 120px 64px 130px; border-top: 1px solid rgba(217,178,92,.18)">
+  <!-- BLOG (CLARO) -->
+  <section id="blog" class="pad light" style="position: relative; padding: 120px 64px 130px">
     <div style="max-width: 1320px; margin: 0 auto">
       <div class="reveal" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 50px">
         <div>
-          <div class="caps" style="font-size: 13px; color: #e6c46a; margin-bottom: 18px">Blog Thin Body · Ciência &amp; bem-estar</div>
-          <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">O que a ciência diz sobre <span class="gold-text" style="font-style: italic">emagrecer</span></h2>
+          <div class="caps" style="font-size: 13px; color: #8a6416; margin-bottom: 18px">Blog Thin Body · Ciência, performance &amp; longevidade</div>
+          <h2 class="serif sec-title" style="margin: 0; font-size: 64px; line-height: 1.02">O que a ciência diz sobre <span class="gold-text" style="font-style: italic">viver melhor</span></h2>
         </div>
-        <p style="margin: 0; max-width: 420px; font-size: 16px; line-height: 1.7; color: #b9ac92; font-weight: 300">Pesquisas e estudos explicados de um jeito simples, com as fontes originais. Clique em um artigo para ler.</p>
+        <p style="margin: 0; max-width: 420px; font-size: 16px; line-height: 1.7; color: #5a5040; font-weight: 300">Pesquisas e estudos explicados de um jeito simples, com as fontes originais. Clique em um artigo para ler.</p>
       </div>
       <div class="blog-grid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start">
         <details class="post reveal">
           <summary>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Suplementos</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
-            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Creatina também é para mulheres</h3>
-            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Por muito tempo vista como suplemento “de homem na academia”, a creatina é uma das substâncias mais estudadas da nutrição esportiva — e as mulheres têm muito a ganhar com ela.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Longevidade</span><span style="font-size: 13px; color: #5a5040">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Treino de força é investimento em longevidade</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">Uma grande revisão de estudos ligou o treino de força a menor risco de morte e de doenças crônicas, com pouco tempo por semana.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Uma meta-análise publicada no British Journal of Sports Medicine reuniu estudos que acompanharam adultos por anos. Quem fazia atividades de fortalecimento muscular teve um risco de 10% a 17% menor de morte por todas as causas, doenças cardiovasculares, câncer e diabetes.</p><p>O maior benefício apareceu com cerca de 30 a 60 minutos por semana. Quando o treino de força era combinado com exercício aeróbico, a redução do risco de morte por qualquer causa chegou a 40%.</p><p>São estudos observacionais, que mostram associação e não causa direta. Mas a mensagem é clara: manter músculo é uma das melhores formas de envelhecer com saúde e autonomia.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
+              <ul><li>30 a 60 minutos de musculação por semana já contam.</li><li>Combine com caminhada, bike ou outro aeróbico.</li><li>Proteína e creatina ajudam a preservar massa muscular.</li></ul>
+              <div class="src">Fonte: <a href="https://pubmed.ncbi.nlm.nih.gov/35228201/">Momma et al., Br J Sports Med (2022)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Performance</span><span style="font-size: 13px; color: #5a5040">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Cafeína antes do treino: o que diz a ciência</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">A cafeína é um dos ingredientes mais estudados da nutrição esportiva. A Sociedade Internacional de Nutrição Esportiva resumiu as evidências.</p>
+            <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
+          </summary>
+          <div class="body">
+            <div><p>Segundo o posicionamento oficial da International Society of Sports Nutrition, a cafeína melhora o desempenho de forma consistente quando consumida em doses de 3 a 6 mg por kg de peso corporal.</p><p>Os benefícios aparecem em resistência muscular, força, velocidade, sprints e saltos, e são mais consistentes no exercício aeróbico de longa duração. A entidade também aponta que pré-treinos com cafeína melhoram o desempenho, em pessoas treinadas e não treinadas.</p><p>As respostas variam entre pessoas: algumas sentem mais efeito, outras têm o sono ou a ansiedade afetados. Por isso, vale ajustar o horário e a dose ao seu corpo.</p></div>
+            <div class="box">
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
+              <ul><li>Tome cerca de 30 a 60 minutos antes do treino.</li><li>Evite cafeína perto da hora de dormir.</li><li>Gestantes e quem tem sensibilidade devem conversar com o médico.</li></ul>
+              <div class="src">Fonte: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7777221/">Guest et al., J Int Soc Sports Nutr (2021)</a></div>
+            </div>
+          </div>
+        </details>
+        <details class="post reveal">
+          <summary>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Suplementos</span><span style="font-size: 13px; color: #5a5040">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Creatina também é para mulheres</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">Por muito tempo vista como suplemento “de homem na academia”, a creatina é uma das substâncias mais estudadas da nutrição esportiva — e as mulheres têm muito a ganhar com ela.</p>
             <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
           </summary>
           <div class="body">
             <div><p>Revisões científicas recentes mostram que mulheres respondem à creatina de forma parecida com os homens: mais força, melhor desempenho nos treinos e melhora da composição corporal, principalmente quando ela vem junto com treino de força.</p><p>Um detalhe importante: mulheres costumam ter estoques menores de creatina nos músculos, o que ajuda a explicar por que podem se beneficiar da suplementação. Pesquisas também vêm estudando efeitos no humor, na cognição e, após a menopausa, na massa muscular e na saúde dos ossos quando a creatina é combinada com musculação.</p><p>Ainda há perguntas em aberto — por exemplo, sobre o período da perimenopausa —, mas o conjunto das evidências coloca a creatina como uma aliada segura e bem documentada para mulheres ativas.</p></div>
             <div class="box">
-              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
               <ul><li>Funciona melhor junto com treino de força.</li><li>A dose mais usada fica entre 3 e 5 g por dia, todos os dias.</li><li>Não precisa de fase de “saturação” para ter benefício.</li><li>Na dúvida, converse com seu nutricionista.</li></ul>
               <div class="src">Fontes: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7998865/">Smith-Ryan et al., Nutrients (2021)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12086928/">Creatine in women’s health (2025)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/39796530/">Nutrients (2024)</a></div>
             </div>
@@ -857,15 +981,15 @@ html{scroll-behavior:smooth}
         </details>
         <details class="post reveal">
           <summary>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Pesquisa</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
-            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Chá verde emagrece? O que as meta-análises dizem</h3>
-            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">As catequinas do chá verde, como o EGCG, são estudadas há anos. A resposta honesta: ajudam um pouco — e funcionam melhor dentro de uma rotina.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Pesquisa</span><span style="font-size: 13px; color: #5a5040">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Chá verde emagrece? O que as meta-análises dizem</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">As catequinas do chá verde, como o EGCG, são estudadas há anos. A resposta honesta: ajudam um pouco — e funcionam melhor dentro de uma rotina.</p>
             <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
           </summary>
           <div class="body">
             <div><p>Uma meta-análise publicada no International Journal of Obesity concluiu que as catequinas do chá verde, junto com a cafeína, têm um efeito positivo, porém pequeno, na perda e na manutenção de peso.</p><p>Outra revisão, no American Journal of Clinical Nutrition, encontrou em média cerca de 1,4 kg a menos de peso e quase 2 cm a menos de cintura com catequinas e cafeína, comparado à cafeína sozinha. Já a revisão Cochrane apontou que, em estudos feitos fora do Japão, a diferença foi pequena demais para fazer diferença clínica sozinha.</p><p>Por isso o chá verde faz sentido como parte de um ritual — hidratação, um começo de dia com intenção, menos bebidas açucaradas — e não como solução isolada.</p></div>
             <div class="box">
-              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
               <ul><li>Use o chá como ritual, não como milagre.</li><li>Prefira trocar bebidas açucaradas pelo chá.</li><li>Combine com sono, movimento e boa alimentação.</li></ul>
               <div class="src">Fontes: <a href="https://pubmed.ncbi.nlm.nih.gov/19597519/">Hursel et al., Int J Obes (2009)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/19906797/">Phung et al., AJCN (2010)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/23235664/">Cochrane (2012)</a></div>
             </div>
@@ -873,15 +997,15 @@ html{scroll-behavior:smooth}
         </details>
         <details class="post reveal">
           <summary>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #b9ac92">3 min de leitura</span></div>
-            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Dormir mais pode fazer você comer menos</h3>
-            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Um estudo publicado no JAMA Internal Medicine mostrou que dormir um pouco mais reduziu a quantidade de calorias consumidas por dia — sem nenhuma dieta.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #5a5040">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Dormir mais pode fazer você comer menos</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">Um estudo publicado no JAMA Internal Medicine mostrou que dormir um pouco mais reduziu a quantidade de calorias consumidas por dia — sem nenhuma dieta.</p>
             <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
           </summary>
           <div class="body">
             <div><p>Pesquisadores da Universidade de Chicago acompanharam 80 adultos com sobrepeso que dormiam menos de 6,5 horas por noite. Depois de uma única conversa sobre higiene do sono, o grupo passou a dormir, em média, 1,2 hora a mais por noite.</p><p>O resultado chamou atenção: esse grupo passou a consumir, em média, cerca de 270 calorias a menos por dia, mesmo sem nenhuma orientação de dieta ou exercício e vivendo a rotina normal em casa.</p><p>Segundo a pesquisadora, reduzir o uso de telas antes de dormir pareceu ser uma das mudanças mais importantes.</p></div>
             <div class="box">
-              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
               <ul><li>Defina um horário fixo para deitar.</li><li>Deixe o celular longe da cama.</li><li>Um quarto escuro e fresco ajuda a dormir melhor.</li></ul>
               <div class="src">Fonte: <a href="https://www.uchicagomedicine.org/forefront/research-and-discoveries-articles/getting-more-sleep-reduces-caloric-intake">Tasali et al., JAMA Internal Medicine (2022)</a></div>
             </div>
@@ -889,15 +1013,15 @@ html{scroll-behavior:smooth}
         </details>
         <details class="post reveal">
           <summary>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #b9ac92">3 min de leitura</span></div>
-            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">O copo d’água antes da refeição</h3>
-            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Um hábito simples, testado em estudo clínico: beber água antes das principais refeições ajudou a perder mais peso.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Hábitos</span><span style="font-size: 13px; color: #5a5040">3 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">O copo d’água antes da refeição</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">Um hábito simples, testado em estudo clínico: beber água antes das principais refeições ajudou a perder mais peso.</p>
             <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
           </summary>
           <div class="body">
             <div><p>Em um estudo publicado na revista Obesity, 48 adultos de 55 a 75 anos seguiram uma dieta com menos calorias por 12 semanas. Metade deles bebia 500 ml de água antes de cada refeição principal.</p><p>O grupo que bebeu água antes das refeições perdeu cerca de 2 kg a mais do que o grupo que fez só a dieta. Os pesquisadores observaram que a água reduzia a quantidade de comida ingerida logo em seguida.</p><p>O estudo foi feito com adultos mais velhos, mas o hábito é simples, barato e fácil de encaixar em qualquer rotina.</p></div>
             <div class="box">
-              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
               <ul><li>Cerca de 2 copos de água uns 30 minutos antes das refeições.</li><li>Deixe uma garrafa sempre por perto.</li><li>Troque refrigerantes e sucos adoçados por água ou chá.</li></ul>
               <div class="src">Fonte: <a href="https://pubmed.ncbi.nlm.nih.gov/19661958/">Dennis et al., Obesity (2010)</a></div>
             </div>
@@ -905,22 +1029,22 @@ html{scroll-behavior:smooth}
         </details>
         <details class="post reveal">
           <summary>
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Nutrição</span><span style="font-size: 13px; color: #b9ac92">4 min de leitura</span></div>
-            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #efe7d6">Proteína: a aliada da saciedade</h3>
-            <p style="margin: 0; color: #b9ac92; line-height: 1.7; font-weight: 300">Comer proteína suficiente ajuda a sentir menos fome e a preservar músculo enquanto você emagrece.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="tag">Nutrição</span><span style="font-size: 13px; color: #5a5040">4 min de leitura</span></div>
+            <h3 class="serif" style="margin: 0; font-size: 30px; line-height: 1.15; color: #1a1610">Proteína: a aliada da saciedade</h3>
+            <p style="margin: 0; color: #5a5040; line-height: 1.7; font-weight: 300">Comer proteína suficiente ajuda a sentir menos fome e a preservar músculo enquanto você emagrece.</p>
             <span class="more"><span class="lbl-open">Ler artigo</span><span class="lbl-close">Fechar artigo</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></span>
           </summary>
           <div class="body">
             <div><p>Revisões científicas mostram que a proteína costuma dar mais saciedade do que carboidratos e gorduras, além de aumentar um pouco o gasto de energia da digestão.</p><p>Em um estudo com 46 mulheres que seguiram uma dieta com déficit calórico por 12 semanas, quem comeu mais proteína perdeu bem menos massa magra (cerca de 1,5 kg contra 2,8 kg), com perda de peso parecida.</p><p>Preservar músculo é importante: ele ajuda a manter o metabolismo e a disposição, e evita o efeito sanfona.</p></div>
             <div class="box">
-              <div class="caps" style="font-size: 12px; color: #e6c46a">Na prática</div>
+              <div class="caps" style="font-size: 12px; color: #8a6416">Na prática</div>
               <ul><li>Inclua uma fonte de proteína em cada refeição.</li><li>Ovos, iogurte, frango, peixe e leguminosas são ótimas opções.</li><li>A quantidade ideal é individual: procure um nutricionista.</li></ul>
               <div class="src">Fontes: <a href="https://pubmed.ncbi.nlm.nih.gov/25926512/">Leidy et al., AJCN (2015)</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/17299116/">Obesity (2007)</a></div>
             </div>
           </div>
         </details>
       </div>
-      <p style="margin: 36px 0 0; font-size: 13.5px; color: #8f846f; text-align: center">Conteúdo informativo, baseado em estudos publicados. Não substitui a orientação de médico ou nutricionista.</p>
+      <p style="margin: 36px 0 0; font-size: 13.5px; color: #7a6f5c; text-align: center">Conteúdo informativo, baseado em estudos publicados. Não substitui a orientação de médico ou nutricionista.</p>
     </div>
   </section>
 
@@ -930,7 +1054,7 @@ html{scroll-behavior:smooth}
     <div class="reveal" style="position: relative; max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px">
       <img src="assets/logo.webp" alt="Thin Body" style="width: 170px; height: auto">
       <h2 class="serif sec-title" style="margin: 0; font-size: 70px; line-height: 1.02">A linha completa está <span class="gold-text" style="font-style: italic">chegando.</span></h2>
-      <p style="margin: 0; font-size: 19px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 600px">Entre na lista pelo WhatsApp e seja a primeira a saber de cada lançamento, com condições especiais para quem chega antes.</p>
+      <p style="margin: 0; font-size: 19px; line-height: 1.7; color: #b9ac92; font-weight: 300; max-width: 640px">Performance, qualidade de vida, longevidade e emagrecimento saudável. Entre na lista pelo WhatsApp e seja a primeira pessoa a saber de cada lançamento.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
         <a class="btn-gold" href="https://wa.me/5548996756186?text=Oi!%20Quero%20entrar%20na%20lista%20de%20lan%C3%A7amentos%20Thin%20Body">Quero ser avisada primeiro</a>
         <a class="btn-ghost" href="https://www.instagram.com/thinbodyoficial/">@thinbodyoficial</a>
@@ -943,7 +1067,7 @@ html{scroll-behavior:smooth}
     <div style="display: flex; align-items: center; gap: 12px">
       <img src="assets/simbolo.webp" alt="" style="height: 28px; width: auto">
       <span class="caps" style="font-size: 13px; color: #d9b25c">Thin Body</span>
-      <span>· Suplementos naturais</span>
+      <span>· Nutrição para performance, saúde e longevidade</span>
     </div>
     <div style="display: flex; gap: 28px; flex-wrap: wrap">
       <a href="#quem-eu-sou">Quem eu sou</a>
